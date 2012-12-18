@@ -1,0 +1,1281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B9398BB163930FC00A0F16C /* ScreenReporterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA89E1636B44900051214 /* ScreenReporterManager.h */; };
+		1B9398BD163930FF00A0F16C /* ScreenReporterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA89F1636B44900051214 /* ScreenReporterManager.m */; };
+		1B9398BE1639310300A0F16C /* ScreenReporterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA8A01636B44900051214 /* ScreenReporterView.h */; };
+		1B9398BF1639310700A0F16C /* ScreenReporterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA8A11636B44900051214 /* ScreenReporterView.m */; };
+		8D1CA8A21636B44A00051214 /* ScreenReporterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA89E1636B44900051214 /* ScreenReporterManager.h */; };
+		8D1CA8A31636B44A00051214 /* ScreenReporterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA89F1636B44900051214 /* ScreenReporterManager.m */; };
+		8D1CA8A41636B44A00051214 /* ScreenReporterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA8A01636B44900051214 /* ScreenReporterView.h */; };
+		8D1CA8A51636B44A00051214 /* ScreenReporterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA8A11636B44900051214 /* ScreenReporterView.m */; };
+		A4184BFD1619A8E50074A922 /* crash_report.proto in Sources */ = {isa = PBXBuildFile; fileRef = A4F80E821615816D00050D21 /* crash_report.proto */; };
+		A455DAE4161586E500491F21 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA01161586E400491F21 /* config.h */; };
+		A455DB36161586E500491F21 /* descriptor.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA5B161586E400491F21 /* descriptor.cc */; };
+		A455DB37161586E500491F21 /* descriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA5C161586E400491F21 /* descriptor.h */; };
+		A455DB38161586E500491F21 /* descriptor.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA5D161586E400491F21 /* descriptor.pb.cc */; };
+		A455DB39161586E500491F21 /* descriptor.pb.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA5E161586E400491F21 /* descriptor.pb.h */; };
+		A455DB3A161586E500491F21 /* descriptor_database.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA60161586E400491F21 /* descriptor_database.cc */; };
+		A455DB3B161586E500491F21 /* descriptor_database.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA61161586E400491F21 /* descriptor_database.h */; };
+		A455DB3E161586E500491F21 /* dynamic_message.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA64161586E400491F21 /* dynamic_message.cc */; };
+		A455DB3F161586E500491F21 /* dynamic_message.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA65161586E400491F21 /* dynamic_message.h */; };
+		A455DB41161586E500491F21 /* extension_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA67161586E400491F21 /* extension_set.cc */; };
+		A455DB42161586E500491F21 /* extension_set.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA68161586E400491F21 /* extension_set.h */; };
+		A455DB43161586E500491F21 /* extension_set_heavy.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA69161586E400491F21 /* extension_set_heavy.cc */; };
+		A455DB45161586E500491F21 /* generated_message_reflection.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA6B161586E400491F21 /* generated_message_reflection.cc */; };
+		A455DB46161586E500491F21 /* generated_message_reflection.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA6C161586E400491F21 /* generated_message_reflection.h */; };
+		A455DB48161586E500491F21 /* generated_message_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA6E161586E400491F21 /* generated_message_util.cc */; };
+		A455DB49161586E500491F21 /* generated_message_util.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA6F161586E400491F21 /* generated_message_util.h */; };
+		A455DB4A161586E500491F21 /* coded_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA71161586E400491F21 /* coded_stream.cc */; };
+		A455DB4B161586E500491F21 /* coded_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA72161586E400491F21 /* coded_stream.h */; };
+		A455DB4C161586E500491F21 /* coded_stream_inl.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA73161586E400491F21 /* coded_stream_inl.h */; };
+		A455DB4E161586E500491F21 /* gzip_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA75161586E400491F21 /* gzip_stream.cc */; };
+		A455DB4F161586E500491F21 /* gzip_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA76161586E400491F21 /* gzip_stream.h */; };
+		A455DB50161586E500491F21 /* package_info.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA78161586E400491F21 /* package_info.h */; };
+		A455DB51161586E500491F21 /* printer.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA79161586E400491F21 /* printer.cc */; };
+		A455DB52161586E500491F21 /* printer.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA7A161586E400491F21 /* printer.h */; };
+		A455DB54161586E500491F21 /* tokenizer.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA7C161586E400491F21 /* tokenizer.cc */; };
+		A455DB55161586E500491F21 /* tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA7D161586E400491F21 /* tokenizer.h */; };
+		A455DB57161586E500491F21 /* zero_copy_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA7F161586E400491F21 /* zero_copy_stream.cc */; };
+		A455DB58161586E500491F21 /* zero_copy_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA80161586E400491F21 /* zero_copy_stream.h */; };
+		A455DB59161586E500491F21 /* zero_copy_stream_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA81161586E400491F21 /* zero_copy_stream_impl.cc */; };
+		A455DB5A161586E500491F21 /* zero_copy_stream_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA82161586E400491F21 /* zero_copy_stream_impl.h */; };
+		A455DB5B161586E500491F21 /* zero_copy_stream_impl_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA83161586E400491F21 /* zero_copy_stream_impl_lite.cc */; };
+		A455DB5C161586E500491F21 /* zero_copy_stream_impl_lite.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA84161586E400491F21 /* zero_copy_stream_impl_lite.h */; };
+		A455DB5F161586E500491F21 /* message.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA87161586E400491F21 /* message.cc */; };
+		A455DB60161586E500491F21 /* message.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA88161586E400491F21 /* message.h */; };
+		A455DB61161586E500491F21 /* message_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA89161586E400491F21 /* message_lite.cc */; };
+		A455DB62161586E500491F21 /* message_lite.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA8A161586E400491F21 /* message_lite.h */; };
+		A455DB64161586E500491F21 /* package_info.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA8C161586E400491F21 /* package_info.h */; };
+		A455DB65161586E500491F21 /* reflection_ops.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA8D161586E400491F21 /* reflection_ops.cc */; };
+		A455DB66161586E500491F21 /* reflection_ops.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA8E161586E400491F21 /* reflection_ops.h */; };
+		A455DB68161586E500491F21 /* repeated_field.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA90161586E400491F21 /* repeated_field.cc */; };
+		A455DB69161586E500491F21 /* repeated_field.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA91161586E400491F21 /* repeated_field.h */; };
+		A455DB6B161586E500491F21 /* service.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA93161586E400491F21 /* service.cc */; };
+		A455DB6C161586E500491F21 /* service.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA94161586E400491F21 /* service.h */; };
+		A455DB6D161586E500491F21 /* common.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA96161586E400491F21 /* common.cc */; };
+		A455DB6E161586E500491F21 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA97161586E400491F21 /* common.h */; };
+		A455DB70161586E500491F21 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA99161586E400491F21 /* hash.h */; };
+		A455DB71161586E500491F21 /* map-util.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA9A161586E400491F21 /* map-util.h */; };
+		A455DB72161586E500491F21 /* once.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA9B161586E400491F21 /* once.cc */; };
+		A455DB73161586E500491F21 /* once.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA9C161586E400491F21 /* once.h */; };
+		A455DB75161586E500491F21 /* stl_util-inl.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA9E161586E400491F21 /* stl_util-inl.h */; };
+		A455DB76161586E500491F21 /* structurally_valid.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA9F161586E400491F21 /* structurally_valid.cc */; };
+		A455DB78161586E500491F21 /* strutil.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DAA1161586E400491F21 /* strutil.cc */; };
+		A455DB79161586E500491F21 /* strutil.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DAA2161586E400491F21 /* strutil.h */; };
+		A455DB7B161586E500491F21 /* substitute.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DAA4161586E400491F21 /* substitute.cc */; };
+		A455DB7C161586E500491F21 /* substitute.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DAA5161586E400491F21 /* substitute.h */; };
+		A455DB87161586E500491F21 /* text_format.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DAB6161586E400491F21 /* text_format.cc */; };
+		A455DB88161586E500491F21 /* text_format.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DAB7161586E400491F21 /* text_format.h */; };
+		A455DBA0161586E500491F21 /* unknown_field_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DADB161586E400491F21 /* unknown_field_set.cc */; };
+		A455DBA1161586E500491F21 /* unknown_field_set.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DADC161586E400491F21 /* unknown_field_set.h */; };
+		A455DBA3161586E500491F21 /* wire_format.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DADE161586E400491F21 /* wire_format.cc */; };
+		A455DBA4161586E500491F21 /* wire_format.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DADF161586E400491F21 /* wire_format.h */; };
+		A455DBA5161586E500491F21 /* wire_format_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DAE0161586E400491F21 /* wire_format_lite.cc */; };
+		A455DBA6161586E500491F21 /* wire_format_lite.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DAE1161586E400491F21 /* wire_format_lite.h */; };
+		A455DBA7161586E500491F21 /* wire_format_lite_inl.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DAE2161586E400491F21 /* wire_format_lite_inl.h */; };
+		A455DBB71615A5FF00491F21 /* PLCrashAsync.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DBB61615A5FF00491F21 /* PLCrashAsync.h */; };
+		A455DBB91615A62A00491F21 /* PLCrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DBB81615A62A00491F21 /* PLCrashReporter.h */; };
+		A455DBBB1615A65F00491F21 /* PLCrashFrameWalker_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DBBA1615A65F00491F21 /* PLCrashFrameWalker_i386.h */; };
+		A4AE73D01624007D002C93F4 /* crash_report.proto in Sources */ = {isa = PBXBuildFile; fileRef = A4F80E821615816D00050D21 /* crash_report.proto */; };
+		A4AE73D11624007D002C93F4 /* AironAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF1E5E41504CC4A00446AE5 /* AironAppManager.m */; };
+		A4AE73D21624007D002C93F4 /* CrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80E841615816D00050D21 /* CrashReporter.m */; };
+		A4AE73D31624007D002C93F4 /* PLCrashAsync.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80E9E1615816D00050D21 /* PLCrashAsync.c */; };
+		A4AE73D41624007D002C93F4 /* PLCrashAsyncImage.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80E9F1615816D00050D21 /* PLCrashAsyncImage.c */; };
+		A4AE73D51624007D002C93F4 /* PLCrashAsyncSignalInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EA11615816D00050D21 /* PLCrashAsyncSignalInfo.c */; };
+		A4AE73D61624007D002C93F4 /* PLCrashFrameWalker.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EA31615816D00050D21 /* PLCrashFrameWalker.c */; };
+		A4AE73D71624007D002C93F4 /* PLCrashFrameWalker_arm.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EA51615816D00050D21 /* PLCrashFrameWalker_arm.c */; };
+		A4AE73D81624007D002C93F4 /* PLCrashFrameWalker_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EA71615816D00050D21 /* PLCrashFrameWalker_i386.c */; };
+		A4AE73D91624007D002C93F4 /* PLCrashFrameWalker_ppc.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EA81615816D00050D21 /* PLCrashFrameWalker_ppc.c */; };
+		A4AE73DA1624007D002C93F4 /* PLCrashFrameWalker_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EAA1615816D00050D21 /* PLCrashFrameWalker_x86_64.c */; };
+		A4AE73DB1624007D002C93F4 /* PLCrashLogWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EAD1615816D00050D21 /* PLCrashLogWriter.mm */; };
+		A4AE73DC1624007D002C93F4 /* PLCrashReport.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EAF1615816D00050D21 /* PLCrashReport.mm */; };
+		A4AE73DD1624007D002C93F4 /* PLCrashReportApplicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EB11615816D00050D21 /* PLCrashReportApplicationInfo.m */; };
+		A4AE73DE1624007D002C93F4 /* PLCrashReportBinaryImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EB31615816D00050D21 /* PLCrashReportBinaryImageInfo.m */; };
+		A4AE73DF1624007D002C93F4 /* PLCrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EB41615816D00050D21 /* PLCrashReporter.m */; };
+		A4AE73E01624007D002C93F4 /* PLCrashReportExceptionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EB61615816D00050D21 /* PLCrashReportExceptionInfo.m */; };
+		A4AE73E11624007D002C93F4 /* PLCrashReportMachineInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EB91615816D00050D21 /* PLCrashReportMachineInfo.m */; };
+		A4AE73E21624007D002C93F4 /* PLCrashReportProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EBB1615816D00050D21 /* PLCrashReportProcessInfo.m */; };
+		A4AE73E31624007D002C93F4 /* PLCrashReportProcessorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EBD1615816D00050D21 /* PLCrashReportProcessorInfo.m */; };
+		A4AE73E41624007D002C93F4 /* PLCrashReportSignalInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EBF1615816D00050D21 /* PLCrashReportSignalInfo.m */; };
+		A4AE73E51624007D002C93F4 /* PLCrashReportSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EC11615816D00050D21 /* PLCrashReportSystemInfo.m */; };
+		A4AE73E61624007D002C93F4 /* PLCrashReportTextFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EC31615816D00050D21 /* PLCrashReportTextFormatter.m */; };
+		A4AE73E71624007D002C93F4 /* PLCrashReportThreadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EC51615816D00050D21 /* PLCrashReportThreadInfo.m */; };
+		A4AE73E81624007D002C93F4 /* PLCrashSignalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EC71615816D00050D21 /* PLCrashSignalHandler.m */; };
+		A4AE73E91624007D002C93F4 /* PLCrashSysctl.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EC81615816D00050D21 /* PLCrashSysctl.c */; };
+		A4AE73EA1624007D002C93F4 /* descriptor.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA5B161586E400491F21 /* descriptor.cc */; };
+		A4AE73EB1624007D002C93F4 /* descriptor.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA5D161586E400491F21 /* descriptor.pb.cc */; };
+		A4AE73EC1624007D002C93F4 /* descriptor_database.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA60161586E400491F21 /* descriptor_database.cc */; };
+		A4AE73ED1624007D002C93F4 /* dynamic_message.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA64161586E400491F21 /* dynamic_message.cc */; };
+		A4AE73EE1624007D002C93F4 /* extension_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA67161586E400491F21 /* extension_set.cc */; };
+		A4AE73EF1624007D002C93F4 /* extension_set_heavy.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA69161586E400491F21 /* extension_set_heavy.cc */; };
+		A4AE73F01624007D002C93F4 /* generated_message_reflection.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA6B161586E400491F21 /* generated_message_reflection.cc */; };
+		A4AE73F11624007D002C93F4 /* generated_message_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA6E161586E400491F21 /* generated_message_util.cc */; };
+		A4AE73F21624007D002C93F4 /* coded_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA71161586E400491F21 /* coded_stream.cc */; };
+		A4AE73F31624007D002C93F4 /* gzip_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA75161586E400491F21 /* gzip_stream.cc */; };
+		A4AE73F41624007D002C93F4 /* printer.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA79161586E400491F21 /* printer.cc */; };
+		A4AE73F51624007D002C93F4 /* tokenizer.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA7C161586E400491F21 /* tokenizer.cc */; };
+		A4AE73F61624007D002C93F4 /* zero_copy_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA7F161586E400491F21 /* zero_copy_stream.cc */; };
+		A4AE73F71624007D002C93F4 /* zero_copy_stream_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA81161586E400491F21 /* zero_copy_stream_impl.cc */; };
+		A4AE73F81624007D002C93F4 /* zero_copy_stream_impl_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA83161586E400491F21 /* zero_copy_stream_impl_lite.cc */; };
+		A4AE73F91624007D002C93F4 /* message.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA87161586E400491F21 /* message.cc */; };
+		A4AE73FA1624007D002C93F4 /* message_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA89161586E400491F21 /* message_lite.cc */; };
+		A4AE73FB1624007D002C93F4 /* reflection_ops.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA8D161586E400491F21 /* reflection_ops.cc */; };
+		A4AE73FC1624007D002C93F4 /* repeated_field.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA90161586E400491F21 /* repeated_field.cc */; };
+		A4AE73FD1624007D002C93F4 /* service.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA93161586E400491F21 /* service.cc */; };
+		A4AE73FE1624007D002C93F4 /* common.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA96161586E400491F21 /* common.cc */; };
+		A4AE73FF1624007D002C93F4 /* once.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA9B161586E400491F21 /* once.cc */; };
+		A4AE74001624007D002C93F4 /* structurally_valid.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA9F161586E400491F21 /* structurally_valid.cc */; };
+		A4AE74011624007D002C93F4 /* strutil.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DAA1161586E400491F21 /* strutil.cc */; };
+		A4AE74021624007D002C93F4 /* substitute.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DAA4161586E400491F21 /* substitute.cc */; };
+		A4AE74031624007D002C93F4 /* text_format.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DAB6161586E400491F21 /* text_format.cc */; };
+		A4AE74041624007D002C93F4 /* unknown_field_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DADB161586E400491F21 /* unknown_field_set.cc */; };
+		A4AE74051624007D002C93F4 /* wire_format.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DADE161586E400491F21 /* wire_format.cc */; };
+		A4AE74061624007D002C93F4 /* wire_format_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DAE0161586E400491F21 /* wire_format_lite.cc */; };
+		A4AE74081624007D002C93F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF1E5DE1504CC4A00446AE5 /* Foundation.framework */; };
+		A4AE740A1624007D002C93F4 /* CrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80E831615816D00050D21 /* CrashReporter.h */; };
+		A4AE740B1624007D002C93F4 /* PLCrashAsyncImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EA01615816D00050D21 /* PLCrashAsyncImage.h */; };
+		A4AE740C1624007D002C93F4 /* PLCrashAsyncSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EA21615816D00050D21 /* PLCrashAsyncSignalInfo.h */; };
+		A4AE740D1624007D002C93F4 /* PLCrashFrameWalker.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EA41615816D00050D21 /* PLCrashFrameWalker.h */; };
+		A4AE740E1624007D002C93F4 /* PLCrashFrameWalker_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EA61615816D00050D21 /* PLCrashFrameWalker_arm.h */; };
+		A4AE740F1624007D002C93F4 /* PLCrashFrameWalker_ppc.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EA91615816D00050D21 /* PLCrashFrameWalker_ppc.h */; };
+		A4AE74101624007D002C93F4 /* PLCrashFrameWalker_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EAB1615816D00050D21 /* PLCrashFrameWalker_x86_64.h */; };
+		A4AE74111624007D002C93F4 /* PLCrashLogWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EAC1615816D00050D21 /* PLCrashLogWriter.h */; };
+		A4AE74121624007D002C93F4 /* PLCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EAE1615816D00050D21 /* PLCrashReport.h */; };
+		A4AE74131624007D002C93F4 /* PLCrashReportApplicationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EB01615816D00050D21 /* PLCrashReportApplicationInfo.h */; };
+		A4AE74141624007D002C93F4 /* PLCrashReportBinaryImageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EB21615816D00050D21 /* PLCrashReportBinaryImageInfo.h */; };
+		A4AE74151624007D002C93F4 /* PLCrashReportExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EB51615816D00050D21 /* PLCrashReportExceptionInfo.h */; };
+		A4AE74161624007D002C93F4 /* PLCrashReportFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EB71615816D00050D21 /* PLCrashReportFormatter.h */; };
+		A4AE74171624007D002C93F4 /* PLCrashReportMachineInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EB81615816D00050D21 /* PLCrashReportMachineInfo.h */; };
+		A4AE74181624007D002C93F4 /* PLCrashReportProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EBA1615816D00050D21 /* PLCrashReportProcessInfo.h */; };
+		A4AE74191624007D002C93F4 /* PLCrashReportProcessorInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EBC1615816D00050D21 /* PLCrashReportProcessorInfo.h */; };
+		A4AE741A1624007D002C93F4 /* PLCrashReportSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EBE1615816D00050D21 /* PLCrashReportSignalInfo.h */; };
+		A4AE741B1624007D002C93F4 /* PLCrashReportSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EC01615816D00050D21 /* PLCrashReportSystemInfo.h */; };
+		A4AE741C1624007D002C93F4 /* PLCrashReportTextFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EC21615816D00050D21 /* PLCrashReportTextFormatter.h */; };
+		A4AE741D1624007D002C93F4 /* PLCrashReportThreadInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EC41615816D00050D21 /* PLCrashReportThreadInfo.h */; };
+		A4AE741E1624007D002C93F4 /* PLCrashSignalHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EC61615816D00050D21 /* PLCrashSignalHandler.h */; };
+		A4AE741F1624007D002C93F4 /* PLCrashSysctl.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EC91615816D00050D21 /* PLCrashSysctl.h */; };
+		A4AE74201624007D002C93F4 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA01161586E400491F21 /* config.h */; };
+		A4AE74211624007D002C93F4 /* descriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA5C161586E400491F21 /* descriptor.h */; };
+		A4AE74221624007D002C93F4 /* descriptor.pb.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA5E161586E400491F21 /* descriptor.pb.h */; };
+		A4AE74231624007D002C93F4 /* descriptor_database.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA61161586E400491F21 /* descriptor_database.h */; };
+		A4AE74241624007D002C93F4 /* dynamic_message.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA65161586E400491F21 /* dynamic_message.h */; };
+		A4AE74251624007D002C93F4 /* extension_set.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA68161586E400491F21 /* extension_set.h */; };
+		A4AE74261624007D002C93F4 /* generated_message_reflection.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA6C161586E400491F21 /* generated_message_reflection.h */; };
+		A4AE74271624007D002C93F4 /* generated_message_util.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA6F161586E400491F21 /* generated_message_util.h */; };
+		A4AE74281624007D002C93F4 /* coded_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA72161586E400491F21 /* coded_stream.h */; };
+		A4AE74291624007D002C93F4 /* coded_stream_inl.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA73161586E400491F21 /* coded_stream_inl.h */; };
+		A4AE742A1624007D002C93F4 /* gzip_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA76161586E400491F21 /* gzip_stream.h */; };
+		A4AE742B1624007D002C93F4 /* package_info.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA78161586E400491F21 /* package_info.h */; };
+		A4AE742C1624007D002C93F4 /* printer.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA7A161586E400491F21 /* printer.h */; };
+		A4AE742D1624007D002C93F4 /* tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA7D161586E400491F21 /* tokenizer.h */; };
+		A4AE742E1624007D002C93F4 /* zero_copy_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA80161586E400491F21 /* zero_copy_stream.h */; };
+		A4AE742F1624007D002C93F4 /* zero_copy_stream_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA82161586E400491F21 /* zero_copy_stream_impl.h */; };
+		A4AE74301624007D002C93F4 /* zero_copy_stream_impl_lite.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA84161586E400491F21 /* zero_copy_stream_impl_lite.h */; };
+		A4AE74311624007D002C93F4 /* message.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA88161586E400491F21 /* message.h */; };
+		A4AE74321624007D002C93F4 /* message_lite.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA8A161586E400491F21 /* message_lite.h */; };
+		A4AE74331624007D002C93F4 /* package_info.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA8C161586E400491F21 /* package_info.h */; };
+		A4AE74341624007D002C93F4 /* reflection_ops.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA8E161586E400491F21 /* reflection_ops.h */; };
+		A4AE74351624007D002C93F4 /* repeated_field.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA91161586E400491F21 /* repeated_field.h */; };
+		A4AE74361624007D002C93F4 /* service.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA94161586E400491F21 /* service.h */; };
+		A4AE74371624007D002C93F4 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA97161586E400491F21 /* common.h */; };
+		A4AE74381624007D002C93F4 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA99161586E400491F21 /* hash.h */; };
+		A4AE74391624007D002C93F4 /* map-util.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA9A161586E400491F21 /* map-util.h */; };
+		A4AE743A1624007D002C93F4 /* once.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA9C161586E400491F21 /* once.h */; };
+		A4AE743B1624007D002C93F4 /* stl_util-inl.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA9E161586E400491F21 /* stl_util-inl.h */; };
+		A4AE743C1624007D002C93F4 /* strutil.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DAA2161586E400491F21 /* strutil.h */; };
+		A4AE743D1624007D002C93F4 /* substitute.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DAA5161586E400491F21 /* substitute.h */; };
+		A4AE743E1624007D002C93F4 /* text_format.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DAB7161586E400491F21 /* text_format.h */; };
+		A4AE743F1624007D002C93F4 /* unknown_field_set.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DADC161586E400491F21 /* unknown_field_set.h */; };
+		A4AE74401624007D002C93F4 /* wire_format.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DADF161586E400491F21 /* wire_format.h */; };
+		A4AE74411624007D002C93F4 /* wire_format_lite.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DAE1161586E400491F21 /* wire_format_lite.h */; };
+		A4AE74421624007D002C93F4 /* wire_format_lite_inl.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DAE2161586E400491F21 /* wire_format_lite_inl.h */; };
+		A4AE74431624007D002C93F4 /* PLCrashAsync.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DBB61615A5FF00491F21 /* PLCrashAsync.h */; };
+		A4AE74441624007D002C93F4 /* PLCrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DBB81615A62A00491F21 /* PLCrashReporter.h */; };
+		A4AE74451624007D002C93F4 /* PLCrashFrameWalker_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DBBA1615A65F00491F21 /* PLCrashFrameWalker_i386.h */; };
+		A4F80EEE1615816D00050D21 /* CrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80E831615816D00050D21 /* CrashReporter.h */; };
+		A4F80EEF1615816D00050D21 /* CrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80E841615816D00050D21 /* CrashReporter.m */; };
+		A4F80F091615816D00050D21 /* PLCrashAsync.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80E9E1615816D00050D21 /* PLCrashAsync.c */; };
+		A4F80F0A1615816D00050D21 /* PLCrashAsyncImage.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80E9F1615816D00050D21 /* PLCrashAsyncImage.c */; };
+		A4F80F0B1615816D00050D21 /* PLCrashAsyncImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EA01615816D00050D21 /* PLCrashAsyncImage.h */; };
+		A4F80F0C1615816D00050D21 /* PLCrashAsyncSignalInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EA11615816D00050D21 /* PLCrashAsyncSignalInfo.c */; };
+		A4F80F0D1615816D00050D21 /* PLCrashAsyncSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EA21615816D00050D21 /* PLCrashAsyncSignalInfo.h */; };
+		A4F80F0E1615816D00050D21 /* PLCrashFrameWalker.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EA31615816D00050D21 /* PLCrashFrameWalker.c */; };
+		A4F80F0F1615816D00050D21 /* PLCrashFrameWalker.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EA41615816D00050D21 /* PLCrashFrameWalker.h */; };
+		A4F80F101615816D00050D21 /* PLCrashFrameWalker_arm.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EA51615816D00050D21 /* PLCrashFrameWalker_arm.c */; };
+		A4F80F111615816D00050D21 /* PLCrashFrameWalker_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EA61615816D00050D21 /* PLCrashFrameWalker_arm.h */; };
+		A4F80F121615816D00050D21 /* PLCrashFrameWalker_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EA71615816D00050D21 /* PLCrashFrameWalker_i386.c */; };
+		A4F80F131615816D00050D21 /* PLCrashFrameWalker_ppc.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EA81615816D00050D21 /* PLCrashFrameWalker_ppc.c */; };
+		A4F80F141615816D00050D21 /* PLCrashFrameWalker_ppc.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EA91615816D00050D21 /* PLCrashFrameWalker_ppc.h */; };
+		A4F80F151615816D00050D21 /* PLCrashFrameWalker_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EAA1615816D00050D21 /* PLCrashFrameWalker_x86_64.c */; };
+		A4F80F161615816D00050D21 /* PLCrashFrameWalker_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EAB1615816D00050D21 /* PLCrashFrameWalker_x86_64.h */; };
+		A4F80F171615816D00050D21 /* PLCrashLogWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EAC1615816D00050D21 /* PLCrashLogWriter.h */; };
+		A4F80F181615816D00050D21 /* PLCrashLogWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EAD1615816D00050D21 /* PLCrashLogWriter.mm */; };
+		A4F80F191615816D00050D21 /* PLCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EAE1615816D00050D21 /* PLCrashReport.h */; };
+		A4F80F1A1615816D00050D21 /* PLCrashReport.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EAF1615816D00050D21 /* PLCrashReport.mm */; };
+		A4F80F1B1615816D00050D21 /* PLCrashReportApplicationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EB01615816D00050D21 /* PLCrashReportApplicationInfo.h */; };
+		A4F80F1C1615816D00050D21 /* PLCrashReportApplicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EB11615816D00050D21 /* PLCrashReportApplicationInfo.m */; };
+		A4F80F1D1615816D00050D21 /* PLCrashReportBinaryImageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EB21615816D00050D21 /* PLCrashReportBinaryImageInfo.h */; };
+		A4F80F1E1615816D00050D21 /* PLCrashReportBinaryImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EB31615816D00050D21 /* PLCrashReportBinaryImageInfo.m */; };
+		A4F80F1F1615816D00050D21 /* PLCrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EB41615816D00050D21 /* PLCrashReporter.m */; };
+		A4F80F201615816D00050D21 /* PLCrashReportExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EB51615816D00050D21 /* PLCrashReportExceptionInfo.h */; };
+		A4F80F211615816D00050D21 /* PLCrashReportExceptionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EB61615816D00050D21 /* PLCrashReportExceptionInfo.m */; };
+		A4F80F221615816D00050D21 /* PLCrashReportFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EB71615816D00050D21 /* PLCrashReportFormatter.h */; };
+		A4F80F231615816D00050D21 /* PLCrashReportMachineInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EB81615816D00050D21 /* PLCrashReportMachineInfo.h */; };
+		A4F80F241615816D00050D21 /* PLCrashReportMachineInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EB91615816D00050D21 /* PLCrashReportMachineInfo.m */; };
+		A4F80F251615816D00050D21 /* PLCrashReportProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EBA1615816D00050D21 /* PLCrashReportProcessInfo.h */; };
+		A4F80F261615816D00050D21 /* PLCrashReportProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EBB1615816D00050D21 /* PLCrashReportProcessInfo.m */; };
+		A4F80F271615816D00050D21 /* PLCrashReportProcessorInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EBC1615816D00050D21 /* PLCrashReportProcessorInfo.h */; };
+		A4F80F281615816D00050D21 /* PLCrashReportProcessorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EBD1615816D00050D21 /* PLCrashReportProcessorInfo.m */; };
+		A4F80F291615816D00050D21 /* PLCrashReportSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EBE1615816D00050D21 /* PLCrashReportSignalInfo.h */; };
+		A4F80F2A1615816D00050D21 /* PLCrashReportSignalInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EBF1615816D00050D21 /* PLCrashReportSignalInfo.m */; };
+		A4F80F2B1615816D00050D21 /* PLCrashReportSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EC01615816D00050D21 /* PLCrashReportSystemInfo.h */; };
+		A4F80F2C1615816D00050D21 /* PLCrashReportSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EC11615816D00050D21 /* PLCrashReportSystemInfo.m */; };
+		A4F80F2D1615816D00050D21 /* PLCrashReportTextFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EC21615816D00050D21 /* PLCrashReportTextFormatter.h */; };
+		A4F80F2E1615816D00050D21 /* PLCrashReportTextFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EC31615816D00050D21 /* PLCrashReportTextFormatter.m */; };
+		A4F80F2F1615816D00050D21 /* PLCrashReportThreadInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EC41615816D00050D21 /* PLCrashReportThreadInfo.h */; };
+		A4F80F301615816D00050D21 /* PLCrashReportThreadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EC51615816D00050D21 /* PLCrashReportThreadInfo.m */; };
+		A4F80F311615816D00050D21 /* PLCrashSignalHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EC61615816D00050D21 /* PLCrashSignalHandler.h */; };
+		A4F80F321615816D00050D21 /* PLCrashSignalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EC71615816D00050D21 /* PLCrashSignalHandler.m */; };
+		A4F80F331615816D00050D21 /* PLCrashSysctl.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80EC81615816D00050D21 /* PLCrashSysctl.c */; };
+		A4F80F341615816D00050D21 /* PLCrashSysctl.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F80EC91615816D00050D21 /* PLCrashSysctl.h */; };
+		ABF1E5DF1504CC4A00446AE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF1E5DE1504CC4A00446AE5 /* Foundation.framework */; };
+		ABF1E5E51504CC4A00446AE5 /* AironAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF1E5E41504CC4A00446AE5 /* AironAppManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		A4AE74461624007D002C93F4 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.proto";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"${DERIVED_FILES_DIR}/$(INPUT_FILE_BASE).pb.cc",
+				"${DERIVED_FILES_DIR}/$(INPUT_FILE_BASE).pb.h",
+			);
+			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-2.4.1/bin/protoc\" --cpp_out=\"${DERIVED_FILES_DIR}\" \"${INPUT_FILE_NAME}\"";
+		};
+		A4AE74C316240092002C93F4 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.proto";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"${DERIVED_FILES_DIR}/$(INPUT_FILE_BASE).pb.cc",
+				"${DERIVED_FILES_DIR}/$(INPUT_FILE_BASE).pb.h",
+			);
+			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-2.4.1/bin/protoc\" --cpp_out=\"${DERIVED_FILES_DIR}\" \"${INPUT_FILE_NAME}\"";
+		};
+		A4CC74EE1615AEA6008B6F20 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.proto";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"${DERIVED_FILES_DIR}/$(INPUT_FILE_BASE).pb.cc",
+				"${DERIVED_FILES_DIR}/$(INPUT_FILE_BASE).pb.h",
+			);
+			script = "cd \"${INPUT_FILE_DIR}\" && \"${SRCROOT}/Dependencies/protobuf-2.4.1/bin/protoc\" --cpp_out=\"${DERIVED_FILES_DIR}\" \"${INPUT_FILE_NAME}\"";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		A4AE74C8162400E2002C93F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABF1E5D21504CC4A00446AE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABF1E5DA1504CC4A00446AE5;
+			remoteInfo = "AironApp-device";
+		};
+		A4AE74CA162400E2002C93F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABF1E5D21504CC4A00446AE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4AE73CE1624007D002C93F4;
+			remoteInfo = "AironApp-sim";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D1CA89E1636B44900051214 /* ScreenReporterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenReporterManager.h; sourceTree = "<group>"; };
+		8D1CA89F1636B44900051214 /* ScreenReporterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenReporterManager.m; sourceTree = "<group>"; };
+		8D1CA8A01636B44900051214 /* ScreenReporterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenReporterView.h; sourceTree = "<group>"; };
+		8D1CA8A11636B44900051214 /* ScreenReporterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenReporterView.m; sourceTree = "<group>"; };
+		A455D9FE161586E400491F21 /* protoc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = protoc; sourceTree = "<group>"; };
+		A455DA01161586E400491F21 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		A455DA5B161586E400491F21 /* descriptor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = descriptor.cc; sourceTree = "<group>"; };
+		A455DA5C161586E400491F21 /* descriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descriptor.h; sourceTree = "<group>"; };
+		A455DA5D161586E400491F21 /* descriptor.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = descriptor.pb.cc; sourceTree = "<group>"; };
+		A455DA5E161586E400491F21 /* descriptor.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descriptor.pb.h; sourceTree = "<group>"; };
+		A455DA5F161586E400491F21 /* descriptor.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = descriptor.proto; sourceTree = "<group>"; };
+		A455DA60161586E400491F21 /* descriptor_database.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = descriptor_database.cc; sourceTree = "<group>"; };
+		A455DA61161586E400491F21 /* descriptor_database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descriptor_database.h; sourceTree = "<group>"; };
+		A455DA64161586E400491F21 /* dynamic_message.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dynamic_message.cc; sourceTree = "<group>"; };
+		A455DA65161586E400491F21 /* dynamic_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dynamic_message.h; sourceTree = "<group>"; };
+		A455DA67161586E400491F21 /* extension_set.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extension_set.cc; sourceTree = "<group>"; };
+		A455DA68161586E400491F21 /* extension_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extension_set.h; sourceTree = "<group>"; };
+		A455DA69161586E400491F21 /* extension_set_heavy.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extension_set_heavy.cc; sourceTree = "<group>"; };
+		A455DA6B161586E400491F21 /* generated_message_reflection.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generated_message_reflection.cc; sourceTree = "<group>"; };
+		A455DA6C161586E400491F21 /* generated_message_reflection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generated_message_reflection.h; sourceTree = "<group>"; };
+		A455DA6E161586E400491F21 /* generated_message_util.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generated_message_util.cc; sourceTree = "<group>"; };
+		A455DA6F161586E400491F21 /* generated_message_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generated_message_util.h; sourceTree = "<group>"; };
+		A455DA71161586E400491F21 /* coded_stream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coded_stream.cc; sourceTree = "<group>"; };
+		A455DA72161586E400491F21 /* coded_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coded_stream.h; sourceTree = "<group>"; };
+		A455DA73161586E400491F21 /* coded_stream_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coded_stream_inl.h; sourceTree = "<group>"; };
+		A455DA75161586E400491F21 /* gzip_stream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gzip_stream.cc; sourceTree = "<group>"; };
+		A455DA76161586E400491F21 /* gzip_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gzip_stream.h; sourceTree = "<group>"; };
+		A455DA77161586E400491F21 /* gzip_stream_unittest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = gzip_stream_unittest.sh; sourceTree = "<group>"; };
+		A455DA78161586E400491F21 /* package_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = package_info.h; sourceTree = "<group>"; };
+		A455DA79161586E400491F21 /* printer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = printer.cc; sourceTree = "<group>"; };
+		A455DA7A161586E400491F21 /* printer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = printer.h; sourceTree = "<group>"; };
+		A455DA7C161586E400491F21 /* tokenizer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tokenizer.cc; sourceTree = "<group>"; };
+		A455DA7D161586E400491F21 /* tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tokenizer.h; sourceTree = "<group>"; };
+		A455DA7F161586E400491F21 /* zero_copy_stream.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zero_copy_stream.cc; sourceTree = "<group>"; };
+		A455DA80161586E400491F21 /* zero_copy_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zero_copy_stream.h; sourceTree = "<group>"; };
+		A455DA81161586E400491F21 /* zero_copy_stream_impl.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zero_copy_stream_impl.cc; sourceTree = "<group>"; };
+		A455DA82161586E400491F21 /* zero_copy_stream_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zero_copy_stream_impl.h; sourceTree = "<group>"; };
+		A455DA83161586E400491F21 /* zero_copy_stream_impl_lite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zero_copy_stream_impl_lite.cc; sourceTree = "<group>"; };
+		A455DA84161586E400491F21 /* zero_copy_stream_impl_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zero_copy_stream_impl_lite.h; sourceTree = "<group>"; };
+		A455DA87161586E400491F21 /* message.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message.cc; sourceTree = "<group>"; };
+		A455DA88161586E400491F21 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		A455DA89161586E400491F21 /* message_lite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message_lite.cc; sourceTree = "<group>"; };
+		A455DA8A161586E400491F21 /* message_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message_lite.h; sourceTree = "<group>"; };
+		A455DA8C161586E400491F21 /* package_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = package_info.h; sourceTree = "<group>"; };
+		A455DA8D161586E400491F21 /* reflection_ops.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reflection_ops.cc; sourceTree = "<group>"; };
+		A455DA8E161586E400491F21 /* reflection_ops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reflection_ops.h; sourceTree = "<group>"; };
+		A455DA90161586E400491F21 /* repeated_field.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = repeated_field.cc; sourceTree = "<group>"; };
+		A455DA91161586E400491F21 /* repeated_field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = repeated_field.h; sourceTree = "<group>"; };
+		A455DA93161586E400491F21 /* service.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = service.cc; sourceTree = "<group>"; };
+		A455DA94161586E400491F21 /* service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service.h; sourceTree = "<group>"; };
+		A455DA96161586E400491F21 /* common.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cc; sourceTree = "<group>"; };
+		A455DA97161586E400491F21 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		A455DA99161586E400491F21 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		A455DA9A161586E400491F21 /* map-util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "map-util.h"; sourceTree = "<group>"; };
+		A455DA9B161586E400491F21 /* once.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = once.cc; sourceTree = "<group>"; };
+		A455DA9C161586E400491F21 /* once.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = once.h; sourceTree = "<group>"; };
+		A455DA9E161586E400491F21 /* stl_util-inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "stl_util-inl.h"; sourceTree = "<group>"; };
+		A455DA9F161586E400491F21 /* structurally_valid.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = structurally_valid.cc; sourceTree = "<group>"; };
+		A455DAA1161586E400491F21 /* strutil.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = strutil.cc; sourceTree = "<group>"; };
+		A455DAA2161586E400491F21 /* strutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strutil.h; sourceTree = "<group>"; };
+		A455DAA4161586E400491F21 /* substitute.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = substitute.cc; sourceTree = "<group>"; };
+		A455DAA5161586E400491F21 /* substitute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = substitute.h; sourceTree = "<group>"; };
+		A455DAB6161586E400491F21 /* text_format.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = text_format.cc; sourceTree = "<group>"; };
+		A455DAB7161586E400491F21 /* text_format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = text_format.h; sourceTree = "<group>"; };
+		A455DADB161586E400491F21 /* unknown_field_set.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unknown_field_set.cc; sourceTree = "<group>"; };
+		A455DADC161586E400491F21 /* unknown_field_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unknown_field_set.h; sourceTree = "<group>"; };
+		A455DADE161586E400491F21 /* wire_format.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wire_format.cc; sourceTree = "<group>"; };
+		A455DADF161586E400491F21 /* wire_format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format.h; sourceTree = "<group>"; };
+		A455DAE0161586E400491F21 /* wire_format_lite.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wire_format_lite.cc; sourceTree = "<group>"; };
+		A455DAE1161586E400491F21 /* wire_format_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format_lite.h; sourceTree = "<group>"; };
+		A455DAE2161586E400491F21 /* wire_format_lite_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format_lite_inl.h; sourceTree = "<group>"; };
+		A455DBB61615A5FF00491F21 /* PLCrashAsync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashAsync.h; sourceTree = "<group>"; };
+		A455DBB81615A62A00491F21 /* PLCrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReporter.h; sourceTree = "<group>"; };
+		A455DBBA1615A65F00491F21 /* PLCrashFrameWalker_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFrameWalker_i386.h; sourceTree = "<group>"; };
+		A4AE744A1624007D002C93F4 /* libAironApp-sim.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAironApp-sim.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4AE74C716240092002C93F4 /* libAironApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAironApp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F80E821615816D00050D21 /* crash_report.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crash_report.proto; sourceTree = "<group>"; };
+		A4F80E831615816D00050D21 /* CrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporter.h; sourceTree = "<group>"; };
+		A4F80E841615816D00050D21 /* CrashReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashReporter.m; sourceTree = "<group>"; };
+		A4F80E9E1615816D00050D21 /* PLCrashAsync.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashAsync.c; sourceTree = "<group>"; };
+		A4F80E9F1615816D00050D21 /* PLCrashAsyncImage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashAsyncImage.c; sourceTree = "<group>"; };
+		A4F80EA01615816D00050D21 /* PLCrashAsyncImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashAsyncImage.h; sourceTree = "<group>"; };
+		A4F80EA11615816D00050D21 /* PLCrashAsyncSignalInfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashAsyncSignalInfo.c; sourceTree = "<group>"; };
+		A4F80EA21615816D00050D21 /* PLCrashAsyncSignalInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashAsyncSignalInfo.h; sourceTree = "<group>"; };
+		A4F80EA31615816D00050D21 /* PLCrashFrameWalker.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashFrameWalker.c; sourceTree = "<group>"; };
+		A4F80EA41615816D00050D21 /* PLCrashFrameWalker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFrameWalker.h; sourceTree = "<group>"; };
+		A4F80EA51615816D00050D21 /* PLCrashFrameWalker_arm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashFrameWalker_arm.c; sourceTree = "<group>"; };
+		A4F80EA61615816D00050D21 /* PLCrashFrameWalker_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFrameWalker_arm.h; sourceTree = "<group>"; };
+		A4F80EA71615816D00050D21 /* PLCrashFrameWalker_i386.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashFrameWalker_i386.c; sourceTree = "<group>"; };
+		A4F80EA81615816D00050D21 /* PLCrashFrameWalker_ppc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashFrameWalker_ppc.c; sourceTree = "<group>"; };
+		A4F80EA91615816D00050D21 /* PLCrashFrameWalker_ppc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFrameWalker_ppc.h; sourceTree = "<group>"; };
+		A4F80EAA1615816D00050D21 /* PLCrashFrameWalker_x86_64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashFrameWalker_x86_64.c; sourceTree = "<group>"; };
+		A4F80EAB1615816D00050D21 /* PLCrashFrameWalker_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFrameWalker_x86_64.h; sourceTree = "<group>"; };
+		A4F80EAC1615816D00050D21 /* PLCrashLogWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashLogWriter.h; sourceTree = "<group>"; };
+		A4F80EAD1615816D00050D21 /* PLCrashLogWriter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PLCrashLogWriter.mm; sourceTree = "<group>"; };
+		A4F80EAE1615816D00050D21 /* PLCrashReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReport.h; sourceTree = "<group>"; };
+		A4F80EAF1615816D00050D21 /* PLCrashReport.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PLCrashReport.mm; sourceTree = "<group>"; };
+		A4F80EB01615816D00050D21 /* PLCrashReportApplicationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportApplicationInfo.h; sourceTree = "<group>"; };
+		A4F80EB11615816D00050D21 /* PLCrashReportApplicationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportApplicationInfo.m; sourceTree = "<group>"; };
+		A4F80EB21615816D00050D21 /* PLCrashReportBinaryImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportBinaryImageInfo.h; sourceTree = "<group>"; };
+		A4F80EB31615816D00050D21 /* PLCrashReportBinaryImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportBinaryImageInfo.m; sourceTree = "<group>"; };
+		A4F80EB41615816D00050D21 /* PLCrashReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReporter.m; sourceTree = "<group>"; };
+		A4F80EB51615816D00050D21 /* PLCrashReportExceptionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportExceptionInfo.h; sourceTree = "<group>"; };
+		A4F80EB61615816D00050D21 /* PLCrashReportExceptionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportExceptionInfo.m; sourceTree = "<group>"; };
+		A4F80EB71615816D00050D21 /* PLCrashReportFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportFormatter.h; sourceTree = "<group>"; };
+		A4F80EB81615816D00050D21 /* PLCrashReportMachineInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportMachineInfo.h; sourceTree = "<group>"; };
+		A4F80EB91615816D00050D21 /* PLCrashReportMachineInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportMachineInfo.m; sourceTree = "<group>"; };
+		A4F80EBA1615816D00050D21 /* PLCrashReportProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportProcessInfo.h; sourceTree = "<group>"; };
+		A4F80EBB1615816D00050D21 /* PLCrashReportProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportProcessInfo.m; sourceTree = "<group>"; };
+		A4F80EBC1615816D00050D21 /* PLCrashReportProcessorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportProcessorInfo.h; sourceTree = "<group>"; };
+		A4F80EBD1615816D00050D21 /* PLCrashReportProcessorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportProcessorInfo.m; sourceTree = "<group>"; };
+		A4F80EBE1615816D00050D21 /* PLCrashReportSignalInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportSignalInfo.h; sourceTree = "<group>"; };
+		A4F80EBF1615816D00050D21 /* PLCrashReportSignalInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportSignalInfo.m; sourceTree = "<group>"; };
+		A4F80EC01615816D00050D21 /* PLCrashReportSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportSystemInfo.h; sourceTree = "<group>"; };
+		A4F80EC11615816D00050D21 /* PLCrashReportSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportSystemInfo.m; sourceTree = "<group>"; };
+		A4F80EC21615816D00050D21 /* PLCrashReportTextFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportTextFormatter.h; sourceTree = "<group>"; };
+		A4F80EC31615816D00050D21 /* PLCrashReportTextFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportTextFormatter.m; sourceTree = "<group>"; };
+		A4F80EC41615816D00050D21 /* PLCrashReportThreadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashReportThreadInfo.h; sourceTree = "<group>"; };
+		A4F80EC51615816D00050D21 /* PLCrashReportThreadInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashReportThreadInfo.m; sourceTree = "<group>"; };
+		A4F80EC61615816D00050D21 /* PLCrashSignalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashSignalHandler.h; sourceTree = "<group>"; };
+		A4F80EC71615816D00050D21 /* PLCrashSignalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashSignalHandler.m; sourceTree = "<group>"; };
+		A4F80EC81615816D00050D21 /* PLCrashSysctl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashSysctl.c; sourceTree = "<group>"; };
+		A4F80EC91615816D00050D21 /* PLCrashSysctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashSysctl.h; sourceTree = "<group>"; };
+		ABF1E5DB1504CC4A00446AE5 /* libAironApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAironApp.a; path = "libAironApp-device.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF1E5DE1504CC4A00446AE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ABF1E5E21504CC4A00446AE5 /* AironApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AironApp-Prefix.pch"; sourceTree = "<group>"; };
+		ABF1E5E31504CC4A00446AE5 /* AironAppManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AironAppManager.h; sourceTree = "<group>"; };
+		ABF1E5E41504CC4A00446AE5 /* AironAppManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AironAppManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4AE74071624007D002C93F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AE74081624007D002C93F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF1E5D81504CC4A00446AE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF1E5DF1504CC4A00446AE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D1CA89D1636B44900051214 /* ScreenReporter */ = {
+			isa = PBXGroup;
+			children = (
+				8D1CA89E1636B44900051214 /* ScreenReporterManager.h */,
+				8D1CA89F1636B44900051214 /* ScreenReporterManager.m */,
+				8D1CA8A01636B44900051214 /* ScreenReporterView.h */,
+				8D1CA8A11636B44900051214 /* ScreenReporterView.m */,
+			);
+			name = ScreenReporter;
+			path = ../ScreenReporter;
+			sourceTree = "<group>";
+		};
+		A455D9FB161586E400491F21 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				A455D9FC161586E400491F21 /* protobuf-2.4.1 */,
+			);
+			path = Dependencies;
+			sourceTree = SOURCE_ROOT;
+		};
+		A455D9FC161586E400491F21 /* protobuf-2.4.1 */ = {
+			isa = PBXGroup;
+			children = (
+				A455D9FD161586E400491F21 /* bin */,
+				A455D9FF161586E400491F21 /* src */,
+			);
+			path = "protobuf-2.4.1";
+			sourceTree = "<group>";
+		};
+		A455D9FD161586E400491F21 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				A455D9FE161586E400491F21 /* protoc */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		A455D9FF161586E400491F21 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A455DA00161586E400491F21 /* google */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A455DA00161586E400491F21 /* google */ = {
+			isa = PBXGroup;
+			children = (
+				A455DA01161586E400491F21 /* config.h */,
+				A455DA02161586E400491F21 /* protobuf */,
+			);
+			path = google;
+			sourceTree = "<group>";
+		};
+		A455DA02161586E400491F21 /* protobuf */ = {
+			isa = PBXGroup;
+			children = (
+				A455DA5B161586E400491F21 /* descriptor.cc */,
+				A455DA5C161586E400491F21 /* descriptor.h */,
+				A455DA5D161586E400491F21 /* descriptor.pb.cc */,
+				A455DA5E161586E400491F21 /* descriptor.pb.h */,
+				A455DA5F161586E400491F21 /* descriptor.proto */,
+				A455DA60161586E400491F21 /* descriptor_database.cc */,
+				A455DA61161586E400491F21 /* descriptor_database.h */,
+				A455DA64161586E400491F21 /* dynamic_message.cc */,
+				A455DA65161586E400491F21 /* dynamic_message.h */,
+				A455DA67161586E400491F21 /* extension_set.cc */,
+				A455DA68161586E400491F21 /* extension_set.h */,
+				A455DA69161586E400491F21 /* extension_set_heavy.cc */,
+				A455DA6B161586E400491F21 /* generated_message_reflection.cc */,
+				A455DA6C161586E400491F21 /* generated_message_reflection.h */,
+				A455DA6E161586E400491F21 /* generated_message_util.cc */,
+				A455DA6F161586E400491F21 /* generated_message_util.h */,
+				A455DA70161586E400491F21 /* io */,
+				A455DA87161586E400491F21 /* message.cc */,
+				A455DA88161586E400491F21 /* message.h */,
+				A455DA89161586E400491F21 /* message_lite.cc */,
+				A455DA8A161586E400491F21 /* message_lite.h */,
+				A455DA8C161586E400491F21 /* package_info.h */,
+				A455DA8D161586E400491F21 /* reflection_ops.cc */,
+				A455DA8E161586E400491F21 /* reflection_ops.h */,
+				A455DA90161586E400491F21 /* repeated_field.cc */,
+				A455DA91161586E400491F21 /* repeated_field.h */,
+				A455DA93161586E400491F21 /* service.cc */,
+				A455DA94161586E400491F21 /* service.h */,
+				A455DA95161586E400491F21 /* stubs */,
+				A455DAB6161586E400491F21 /* text_format.cc */,
+				A455DAB7161586E400491F21 /* text_format.h */,
+				A455DADB161586E400491F21 /* unknown_field_set.cc */,
+				A455DADC161586E400491F21 /* unknown_field_set.h */,
+				A455DADE161586E400491F21 /* wire_format.cc */,
+				A455DADF161586E400491F21 /* wire_format.h */,
+				A455DAE0161586E400491F21 /* wire_format_lite.cc */,
+				A455DAE1161586E400491F21 /* wire_format_lite.h */,
+				A455DAE2161586E400491F21 /* wire_format_lite_inl.h */,
+			);
+			path = protobuf;
+			sourceTree = "<group>";
+		};
+		A455DA70161586E400491F21 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				A455DA71161586E400491F21 /* coded_stream.cc */,
+				A455DA72161586E400491F21 /* coded_stream.h */,
+				A455DA73161586E400491F21 /* coded_stream_inl.h */,
+				A455DA75161586E400491F21 /* gzip_stream.cc */,
+				A455DA76161586E400491F21 /* gzip_stream.h */,
+				A455DA77161586E400491F21 /* gzip_stream_unittest.sh */,
+				A455DA78161586E400491F21 /* package_info.h */,
+				A455DA79161586E400491F21 /* printer.cc */,
+				A455DA7A161586E400491F21 /* printer.h */,
+				A455DA7C161586E400491F21 /* tokenizer.cc */,
+				A455DA7D161586E400491F21 /* tokenizer.h */,
+				A455DA7F161586E400491F21 /* zero_copy_stream.cc */,
+				A455DA80161586E400491F21 /* zero_copy_stream.h */,
+				A455DA81161586E400491F21 /* zero_copy_stream_impl.cc */,
+				A455DA82161586E400491F21 /* zero_copy_stream_impl.h */,
+				A455DA83161586E400491F21 /* zero_copy_stream_impl_lite.cc */,
+				A455DA84161586E400491F21 /* zero_copy_stream_impl_lite.h */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		A455DA95161586E400491F21 /* stubs */ = {
+			isa = PBXGroup;
+			children = (
+				A455DA96161586E400491F21 /* common.cc */,
+				A455DA97161586E400491F21 /* common.h */,
+				A455DA99161586E400491F21 /* hash.h */,
+				A455DA9A161586E400491F21 /* map-util.h */,
+				A455DA9B161586E400491F21 /* once.cc */,
+				A455DA9C161586E400491F21 /* once.h */,
+				A455DA9E161586E400491F21 /* stl_util-inl.h */,
+				A455DA9F161586E400491F21 /* structurally_valid.cc */,
+				A455DAA1161586E400491F21 /* strutil.cc */,
+				A455DAA2161586E400491F21 /* strutil.h */,
+				A455DAA4161586E400491F21 /* substitute.cc */,
+				A455DAA5161586E400491F21 /* substitute.h */,
+			);
+			path = stubs;
+			sourceTree = "<group>";
+		};
+		A4F80E7C1615816D00050D21 /* CrashReporter */ = {
+			isa = PBXGroup;
+			children = (
+				A455D9FB161586E400491F21 /* Dependencies */,
+				A4F80E821615816D00050D21 /* crash_report.proto */,
+				A4F80E831615816D00050D21 /* CrashReporter.h */,
+				A4F80E841615816D00050D21 /* CrashReporter.m */,
+				A455DBB61615A5FF00491F21 /* PLCrashAsync.h */,
+				A4F80E9E1615816D00050D21 /* PLCrashAsync.c */,
+				A4F80E9F1615816D00050D21 /* PLCrashAsyncImage.c */,
+				A4F80EA01615816D00050D21 /* PLCrashAsyncImage.h */,
+				A4F80EA11615816D00050D21 /* PLCrashAsyncSignalInfo.c */,
+				A4F80EA21615816D00050D21 /* PLCrashAsyncSignalInfo.h */,
+				A4F80EA31615816D00050D21 /* PLCrashFrameWalker.c */,
+				A4F80EA41615816D00050D21 /* PLCrashFrameWalker.h */,
+				A4F80EA51615816D00050D21 /* PLCrashFrameWalker_arm.c */,
+				A4F80EA61615816D00050D21 /* PLCrashFrameWalker_arm.h */,
+				A455DBBA1615A65F00491F21 /* PLCrashFrameWalker_i386.h */,
+				A4F80EA71615816D00050D21 /* PLCrashFrameWalker_i386.c */,
+				A4F80EA81615816D00050D21 /* PLCrashFrameWalker_ppc.c */,
+				A4F80EA91615816D00050D21 /* PLCrashFrameWalker_ppc.h */,
+				A4F80EAA1615816D00050D21 /* PLCrashFrameWalker_x86_64.c */,
+				A4F80EAB1615816D00050D21 /* PLCrashFrameWalker_x86_64.h */,
+				A4F80EAC1615816D00050D21 /* PLCrashLogWriter.h */,
+				A4F80EAD1615816D00050D21 /* PLCrashLogWriter.mm */,
+				A4F80EAE1615816D00050D21 /* PLCrashReport.h */,
+				A4F80EAF1615816D00050D21 /* PLCrashReport.mm */,
+				A4F80EB01615816D00050D21 /* PLCrashReportApplicationInfo.h */,
+				A4F80EB11615816D00050D21 /* PLCrashReportApplicationInfo.m */,
+				A4F80EB21615816D00050D21 /* PLCrashReportBinaryImageInfo.h */,
+				A4F80EB31615816D00050D21 /* PLCrashReportBinaryImageInfo.m */,
+				A455DBB81615A62A00491F21 /* PLCrashReporter.h */,
+				A4F80EB41615816D00050D21 /* PLCrashReporter.m */,
+				A4F80EB51615816D00050D21 /* PLCrashReportExceptionInfo.h */,
+				A4F80EB61615816D00050D21 /* PLCrashReportExceptionInfo.m */,
+				A4F80EB71615816D00050D21 /* PLCrashReportFormatter.h */,
+				A4F80EB81615816D00050D21 /* PLCrashReportMachineInfo.h */,
+				A4F80EB91615816D00050D21 /* PLCrashReportMachineInfo.m */,
+				A4F80EBA1615816D00050D21 /* PLCrashReportProcessInfo.h */,
+				A4F80EBB1615816D00050D21 /* PLCrashReportProcessInfo.m */,
+				A4F80EBC1615816D00050D21 /* PLCrashReportProcessorInfo.h */,
+				A4F80EBD1615816D00050D21 /* PLCrashReportProcessorInfo.m */,
+				A4F80EBE1615816D00050D21 /* PLCrashReportSignalInfo.h */,
+				A4F80EBF1615816D00050D21 /* PLCrashReportSignalInfo.m */,
+				A4F80EC01615816D00050D21 /* PLCrashReportSystemInfo.h */,
+				A4F80EC11615816D00050D21 /* PLCrashReportSystemInfo.m */,
+				A4F80EC21615816D00050D21 /* PLCrashReportTextFormatter.h */,
+				A4F80EC31615816D00050D21 /* PLCrashReportTextFormatter.m */,
+				A4F80EC41615816D00050D21 /* PLCrashReportThreadInfo.h */,
+				A4F80EC51615816D00050D21 /* PLCrashReportThreadInfo.m */,
+				A4F80EC61615816D00050D21 /* PLCrashSignalHandler.h */,
+				A4F80EC71615816D00050D21 /* PLCrashSignalHandler.m */,
+				A4F80EC81615816D00050D21 /* PLCrashSysctl.c */,
+				A4F80EC91615816D00050D21 /* PLCrashSysctl.h */,
+			);
+			path = CrashReporter;
+			sourceTree = SOURCE_ROOT;
+		};
+		ABF1E5D01504CC4A00446AE5 = {
+			isa = PBXGroup;
+			children = (
+				ABF1E5E01504CC4A00446AE5 /* AironApp */,
+				ABF1E5DD1504CC4A00446AE5 /* Frameworks */,
+				ABF1E5DC1504CC4A00446AE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABF1E5DC1504CC4A00446AE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABF1E5DB1504CC4A00446AE5 /* libAironApp.a */,
+				A4AE744A1624007D002C93F4 /* libAironApp-sim.a */,
+				A4AE74C716240092002C93F4 /* libAironApp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABF1E5DD1504CC4A00446AE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABF1E5DE1504CC4A00446AE5 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABF1E5E01504CC4A00446AE5 /* AironApp */ = {
+			isa = PBXGroup;
+			children = (
+				8D1CA89D1636B44900051214 /* ScreenReporter */,
+				A4F80E7C1615816D00050D21 /* CrashReporter */,
+				ABF1E5E31504CC4A00446AE5 /* AironAppManager.h */,
+				ABF1E5E41504CC4A00446AE5 /* AironAppManager.m */,
+				ABF1E5E11504CC4A00446AE5 /* Supporting Files */,
+			);
+			path = AironApp;
+			sourceTree = "<group>";
+		};
+		ABF1E5E11504CC4A00446AE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABF1E5E21504CC4A00446AE5 /* AironApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A4AE74091624007D002C93F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AE740A1624007D002C93F4 /* CrashReporter.h in Headers */,
+				A4AE740B1624007D002C93F4 /* PLCrashAsyncImage.h in Headers */,
+				A4AE740C1624007D002C93F4 /* PLCrashAsyncSignalInfo.h in Headers */,
+				A4AE740D1624007D002C93F4 /* PLCrashFrameWalker.h in Headers */,
+				A4AE740E1624007D002C93F4 /* PLCrashFrameWalker_arm.h in Headers */,
+				A4AE740F1624007D002C93F4 /* PLCrashFrameWalker_ppc.h in Headers */,
+				A4AE74101624007D002C93F4 /* PLCrashFrameWalker_x86_64.h in Headers */,
+				A4AE74111624007D002C93F4 /* PLCrashLogWriter.h in Headers */,
+				A4AE74121624007D002C93F4 /* PLCrashReport.h in Headers */,
+				A4AE74131624007D002C93F4 /* PLCrashReportApplicationInfo.h in Headers */,
+				A4AE74141624007D002C93F4 /* PLCrashReportBinaryImageInfo.h in Headers */,
+				A4AE74151624007D002C93F4 /* PLCrashReportExceptionInfo.h in Headers */,
+				A4AE74161624007D002C93F4 /* PLCrashReportFormatter.h in Headers */,
+				A4AE74171624007D002C93F4 /* PLCrashReportMachineInfo.h in Headers */,
+				A4AE74181624007D002C93F4 /* PLCrashReportProcessInfo.h in Headers */,
+				A4AE74191624007D002C93F4 /* PLCrashReportProcessorInfo.h in Headers */,
+				A4AE741A1624007D002C93F4 /* PLCrashReportSignalInfo.h in Headers */,
+				A4AE741B1624007D002C93F4 /* PLCrashReportSystemInfo.h in Headers */,
+				A4AE741C1624007D002C93F4 /* PLCrashReportTextFormatter.h in Headers */,
+				A4AE741D1624007D002C93F4 /* PLCrashReportThreadInfo.h in Headers */,
+				A4AE741E1624007D002C93F4 /* PLCrashSignalHandler.h in Headers */,
+				A4AE741F1624007D002C93F4 /* PLCrashSysctl.h in Headers */,
+				A4AE74201624007D002C93F4 /* config.h in Headers */,
+				A4AE74211624007D002C93F4 /* descriptor.h in Headers */,
+				A4AE74221624007D002C93F4 /* descriptor.pb.h in Headers */,
+				A4AE74231624007D002C93F4 /* descriptor_database.h in Headers */,
+				A4AE74241624007D002C93F4 /* dynamic_message.h in Headers */,
+				A4AE74251624007D002C93F4 /* extension_set.h in Headers */,
+				A4AE74261624007D002C93F4 /* generated_message_reflection.h in Headers */,
+				A4AE74271624007D002C93F4 /* generated_message_util.h in Headers */,
+				A4AE74281624007D002C93F4 /* coded_stream.h in Headers */,
+				A4AE74291624007D002C93F4 /* coded_stream_inl.h in Headers */,
+				A4AE742A1624007D002C93F4 /* gzip_stream.h in Headers */,
+				A4AE742B1624007D002C93F4 /* package_info.h in Headers */,
+				A4AE742C1624007D002C93F4 /* printer.h in Headers */,
+				A4AE742D1624007D002C93F4 /* tokenizer.h in Headers */,
+				A4AE742E1624007D002C93F4 /* zero_copy_stream.h in Headers */,
+				A4AE742F1624007D002C93F4 /* zero_copy_stream_impl.h in Headers */,
+				A4AE74301624007D002C93F4 /* zero_copy_stream_impl_lite.h in Headers */,
+				A4AE74311624007D002C93F4 /* message.h in Headers */,
+				A4AE74321624007D002C93F4 /* message_lite.h in Headers */,
+				A4AE74331624007D002C93F4 /* package_info.h in Headers */,
+				A4AE74341624007D002C93F4 /* reflection_ops.h in Headers */,
+				A4AE74351624007D002C93F4 /* repeated_field.h in Headers */,
+				A4AE74361624007D002C93F4 /* service.h in Headers */,
+				A4AE74371624007D002C93F4 /* common.h in Headers */,
+				A4AE74381624007D002C93F4 /* hash.h in Headers */,
+				A4AE74391624007D002C93F4 /* map-util.h in Headers */,
+				A4AE743A1624007D002C93F4 /* once.h in Headers */,
+				A4AE743B1624007D002C93F4 /* stl_util-inl.h in Headers */,
+				A4AE743C1624007D002C93F4 /* strutil.h in Headers */,
+				A4AE743D1624007D002C93F4 /* substitute.h in Headers */,
+				A4AE743E1624007D002C93F4 /* text_format.h in Headers */,
+				A4AE743F1624007D002C93F4 /* unknown_field_set.h in Headers */,
+				A4AE74401624007D002C93F4 /* wire_format.h in Headers */,
+				A4AE74411624007D002C93F4 /* wire_format_lite.h in Headers */,
+				A4AE74421624007D002C93F4 /* wire_format_lite_inl.h in Headers */,
+				A4AE74431624007D002C93F4 /* PLCrashAsync.h in Headers */,
+				A4AE74441624007D002C93F4 /* PLCrashReporter.h in Headers */,
+				A4AE74451624007D002C93F4 /* PLCrashFrameWalker_i386.h in Headers */,
+				1B9398BB163930FC00A0F16C /* ScreenReporterManager.h in Headers */,
+				1B9398BE1639310300A0F16C /* ScreenReporterView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF1E5D91504CC4A00446AE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F80EEE1615816D00050D21 /* CrashReporter.h in Headers */,
+				A4F80F0B1615816D00050D21 /* PLCrashAsyncImage.h in Headers */,
+				A4F80F0D1615816D00050D21 /* PLCrashAsyncSignalInfo.h in Headers */,
+				A4F80F0F1615816D00050D21 /* PLCrashFrameWalker.h in Headers */,
+				A4F80F111615816D00050D21 /* PLCrashFrameWalker_arm.h in Headers */,
+				A4F80F141615816D00050D21 /* PLCrashFrameWalker_ppc.h in Headers */,
+				A4F80F161615816D00050D21 /* PLCrashFrameWalker_x86_64.h in Headers */,
+				A4F80F171615816D00050D21 /* PLCrashLogWriter.h in Headers */,
+				A4F80F191615816D00050D21 /* PLCrashReport.h in Headers */,
+				A4F80F1B1615816D00050D21 /* PLCrashReportApplicationInfo.h in Headers */,
+				A4F80F1D1615816D00050D21 /* PLCrashReportBinaryImageInfo.h in Headers */,
+				A4F80F201615816D00050D21 /* PLCrashReportExceptionInfo.h in Headers */,
+				A4F80F221615816D00050D21 /* PLCrashReportFormatter.h in Headers */,
+				A4F80F231615816D00050D21 /* PLCrashReportMachineInfo.h in Headers */,
+				A4F80F251615816D00050D21 /* PLCrashReportProcessInfo.h in Headers */,
+				A4F80F271615816D00050D21 /* PLCrashReportProcessorInfo.h in Headers */,
+				A4F80F291615816D00050D21 /* PLCrashReportSignalInfo.h in Headers */,
+				A4F80F2B1615816D00050D21 /* PLCrashReportSystemInfo.h in Headers */,
+				A4F80F2D1615816D00050D21 /* PLCrashReportTextFormatter.h in Headers */,
+				A4F80F2F1615816D00050D21 /* PLCrashReportThreadInfo.h in Headers */,
+				A4F80F311615816D00050D21 /* PLCrashSignalHandler.h in Headers */,
+				A4F80F341615816D00050D21 /* PLCrashSysctl.h in Headers */,
+				A455DAE4161586E500491F21 /* config.h in Headers */,
+				A455DB37161586E500491F21 /* descriptor.h in Headers */,
+				A455DB39161586E500491F21 /* descriptor.pb.h in Headers */,
+				A455DB3B161586E500491F21 /* descriptor_database.h in Headers */,
+				A455DB3F161586E500491F21 /* dynamic_message.h in Headers */,
+				A455DB42161586E500491F21 /* extension_set.h in Headers */,
+				A455DB46161586E500491F21 /* generated_message_reflection.h in Headers */,
+				A455DB49161586E500491F21 /* generated_message_util.h in Headers */,
+				A455DB4B161586E500491F21 /* coded_stream.h in Headers */,
+				A455DB4C161586E500491F21 /* coded_stream_inl.h in Headers */,
+				A455DB4F161586E500491F21 /* gzip_stream.h in Headers */,
+				A455DB50161586E500491F21 /* package_info.h in Headers */,
+				A455DB52161586E500491F21 /* printer.h in Headers */,
+				A455DB55161586E500491F21 /* tokenizer.h in Headers */,
+				A455DB58161586E500491F21 /* zero_copy_stream.h in Headers */,
+				A455DB5A161586E500491F21 /* zero_copy_stream_impl.h in Headers */,
+				A455DB5C161586E500491F21 /* zero_copy_stream_impl_lite.h in Headers */,
+				A455DB60161586E500491F21 /* message.h in Headers */,
+				A455DB62161586E500491F21 /* message_lite.h in Headers */,
+				A455DB64161586E500491F21 /* package_info.h in Headers */,
+				A455DB66161586E500491F21 /* reflection_ops.h in Headers */,
+				A455DB69161586E500491F21 /* repeated_field.h in Headers */,
+				A455DB6C161586E500491F21 /* service.h in Headers */,
+				A455DB6E161586E500491F21 /* common.h in Headers */,
+				A455DB70161586E500491F21 /* hash.h in Headers */,
+				A455DB71161586E500491F21 /* map-util.h in Headers */,
+				A455DB73161586E500491F21 /* once.h in Headers */,
+				A455DB75161586E500491F21 /* stl_util-inl.h in Headers */,
+				A455DB79161586E500491F21 /* strutil.h in Headers */,
+				A455DB7C161586E500491F21 /* substitute.h in Headers */,
+				A455DB88161586E500491F21 /* text_format.h in Headers */,
+				A455DBA1161586E500491F21 /* unknown_field_set.h in Headers */,
+				A455DBA4161586E500491F21 /* wire_format.h in Headers */,
+				A455DBA6161586E500491F21 /* wire_format_lite.h in Headers */,
+				A455DBA7161586E500491F21 /* wire_format_lite_inl.h in Headers */,
+				A455DBB71615A5FF00491F21 /* PLCrashAsync.h in Headers */,
+				A455DBB91615A62A00491F21 /* PLCrashReporter.h in Headers */,
+				A455DBBB1615A65F00491F21 /* PLCrashFrameWalker_i386.h in Headers */,
+				8D1CA8A21636B44A00051214 /* ScreenReporterManager.h in Headers */,
+				8D1CA8A41636B44A00051214 /* ScreenReporterView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A4AE73CE1624007D002C93F4 /* AironApp-sim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4AE74471624007D002C93F4 /* Build configuration list for PBXNativeTarget "AironApp-sim" */;
+			buildPhases = (
+				A4AE73CF1624007D002C93F4 /* Sources */,
+				A4AE74071624007D002C93F4 /* Frameworks */,
+				A4AE74091624007D002C93F4 /* Headers */,
+			);
+			buildRules = (
+				A4AE74461624007D002C93F4 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "AironApp-sim";
+			productName = AironApp;
+			productReference = A4AE744A1624007D002C93F4 /* libAironApp-sim.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A4AE744B16240092002C93F4 /* AironApp-lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4AE74C416240092002C93F4 /* Build configuration list for PBXNativeTarget "AironApp-lib" */;
+			buildPhases = (
+				A4AE74CC162400EB002C93F4 /* ShellScript */,
+			);
+			buildRules = (
+				A4AE74C316240092002C93F4 /* PBXBuildRule */,
+			);
+			dependencies = (
+				A4AE74C9162400E2002C93F4 /* PBXTargetDependency */,
+				A4AE74CB162400E2002C93F4 /* PBXTargetDependency */,
+			);
+			name = "AironApp-lib";
+			productName = AironApp;
+			productReference = A4AE74C716240092002C93F4 /* libAironApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		ABF1E5DA1504CC4A00446AE5 /* AironApp-device */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF1E5E81504CC4A00446AE5 /* Build configuration list for PBXNativeTarget "AironApp-device" */;
+			buildPhases = (
+				ABF1E5D71504CC4A00446AE5 /* Sources */,
+				ABF1E5D81504CC4A00446AE5 /* Frameworks */,
+				ABF1E5D91504CC4A00446AE5 /* Headers */,
+			);
+			buildRules = (
+				A4CC74EE1615AEA6008B6F20 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "AironApp-device";
+			productName = AironApp;
+			productReference = ABF1E5DB1504CC4A00446AE5 /* libAironApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABF1E5D21504CC4A00446AE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "fever9@gmail.com";
+			};
+			buildConfigurationList = ABF1E5D51504CC4A00446AE5 /* Build configuration list for PBXProject "AironApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABF1E5D01504CC4A00446AE5;
+			productRefGroup = ABF1E5DC1504CC4A00446AE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABF1E5DA1504CC4A00446AE5 /* AironApp-device */,
+				A4AE73CE1624007D002C93F4 /* AironApp-sim */,
+				A4AE744B16240092002C93F4 /* AironApp-lib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4AE74CC162400EB002C93F4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#FRAMEWORK=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\nlipo \\\n\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/libAironApp-device.a\" \\\n\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/libAironApp-sim.a\" \\\n-create -output \"${BUILT_PRODUCTS_DIR}/lib${PRODUCT_NAME}.a\"\n\n# Strip debugging symbols\nstrip -S \"${BUILT_PRODUCTS_DIR}/lib${PRODUCT_NAME}.a\"\n\n#cd \"${FRAMEWORK}\" && ln -sf \"Versions/Current/${PRODUCT_NAME}\" ./";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4AE73CF1624007D002C93F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AE73D01624007D002C93F4 /* crash_report.proto in Sources */,
+				A4AE73D11624007D002C93F4 /* AironAppManager.m in Sources */,
+				A4AE73D21624007D002C93F4 /* CrashReporter.m in Sources */,
+				A4AE73D31624007D002C93F4 /* PLCrashAsync.c in Sources */,
+				A4AE73D41624007D002C93F4 /* PLCrashAsyncImage.c in Sources */,
+				A4AE73D51624007D002C93F4 /* PLCrashAsyncSignalInfo.c in Sources */,
+				A4AE73D61624007D002C93F4 /* PLCrashFrameWalker.c in Sources */,
+				A4AE73D71624007D002C93F4 /* PLCrashFrameWalker_arm.c in Sources */,
+				A4AE73D81624007D002C93F4 /* PLCrashFrameWalker_i386.c in Sources */,
+				A4AE73D91624007D002C93F4 /* PLCrashFrameWalker_ppc.c in Sources */,
+				A4AE73DA1624007D002C93F4 /* PLCrashFrameWalker_x86_64.c in Sources */,
+				A4AE73DB1624007D002C93F4 /* PLCrashLogWriter.mm in Sources */,
+				A4AE73DC1624007D002C93F4 /* PLCrashReport.mm in Sources */,
+				A4AE73DD1624007D002C93F4 /* PLCrashReportApplicationInfo.m in Sources */,
+				A4AE73DE1624007D002C93F4 /* PLCrashReportBinaryImageInfo.m in Sources */,
+				A4AE73DF1624007D002C93F4 /* PLCrashReporter.m in Sources */,
+				A4AE73E01624007D002C93F4 /* PLCrashReportExceptionInfo.m in Sources */,
+				A4AE73E11624007D002C93F4 /* PLCrashReportMachineInfo.m in Sources */,
+				A4AE73E21624007D002C93F4 /* PLCrashReportProcessInfo.m in Sources */,
+				A4AE73E31624007D002C93F4 /* PLCrashReportProcessorInfo.m in Sources */,
+				A4AE73E41624007D002C93F4 /* PLCrashReportSignalInfo.m in Sources */,
+				A4AE73E51624007D002C93F4 /* PLCrashReportSystemInfo.m in Sources */,
+				A4AE73E61624007D002C93F4 /* PLCrashReportTextFormatter.m in Sources */,
+				A4AE73E71624007D002C93F4 /* PLCrashReportThreadInfo.m in Sources */,
+				A4AE73E81624007D002C93F4 /* PLCrashSignalHandler.m in Sources */,
+				A4AE73E91624007D002C93F4 /* PLCrashSysctl.c in Sources */,
+				A4AE73EA1624007D002C93F4 /* descriptor.cc in Sources */,
+				A4AE73EB1624007D002C93F4 /* descriptor.pb.cc in Sources */,
+				A4AE73EC1624007D002C93F4 /* descriptor_database.cc in Sources */,
+				A4AE73ED1624007D002C93F4 /* dynamic_message.cc in Sources */,
+				A4AE73EE1624007D002C93F4 /* extension_set.cc in Sources */,
+				A4AE73EF1624007D002C93F4 /* extension_set_heavy.cc in Sources */,
+				A4AE73F01624007D002C93F4 /* generated_message_reflection.cc in Sources */,
+				A4AE73F11624007D002C93F4 /* generated_message_util.cc in Sources */,
+				A4AE73F21624007D002C93F4 /* coded_stream.cc in Sources */,
+				A4AE73F31624007D002C93F4 /* gzip_stream.cc in Sources */,
+				A4AE73F41624007D002C93F4 /* printer.cc in Sources */,
+				A4AE73F51624007D002C93F4 /* tokenizer.cc in Sources */,
+				A4AE73F61624007D002C93F4 /* zero_copy_stream.cc in Sources */,
+				A4AE73F71624007D002C93F4 /* zero_copy_stream_impl.cc in Sources */,
+				A4AE73F81624007D002C93F4 /* zero_copy_stream_impl_lite.cc in Sources */,
+				A4AE73F91624007D002C93F4 /* message.cc in Sources */,
+				A4AE73FA1624007D002C93F4 /* message_lite.cc in Sources */,
+				A4AE73FB1624007D002C93F4 /* reflection_ops.cc in Sources */,
+				A4AE73FC1624007D002C93F4 /* repeated_field.cc in Sources */,
+				A4AE73FD1624007D002C93F4 /* service.cc in Sources */,
+				A4AE73FE1624007D002C93F4 /* common.cc in Sources */,
+				A4AE73FF1624007D002C93F4 /* once.cc in Sources */,
+				A4AE74001624007D002C93F4 /* structurally_valid.cc in Sources */,
+				A4AE74011624007D002C93F4 /* strutil.cc in Sources */,
+				A4AE74021624007D002C93F4 /* substitute.cc in Sources */,
+				A4AE74031624007D002C93F4 /* text_format.cc in Sources */,
+				A4AE74041624007D002C93F4 /* unknown_field_set.cc in Sources */,
+				A4AE74051624007D002C93F4 /* wire_format.cc in Sources */,
+				A4AE74061624007D002C93F4 /* wire_format_lite.cc in Sources */,
+				1B9398BD163930FF00A0F16C /* ScreenReporterManager.m in Sources */,
+				1B9398BF1639310700A0F16C /* ScreenReporterView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF1E5D71504CC4A00446AE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4184BFD1619A8E50074A922 /* crash_report.proto in Sources */,
+				ABF1E5E51504CC4A00446AE5 /* AironAppManager.m in Sources */,
+				A4F80EEF1615816D00050D21 /* CrashReporter.m in Sources */,
+				A4F80F091615816D00050D21 /* PLCrashAsync.c in Sources */,
+				A4F80F0A1615816D00050D21 /* PLCrashAsyncImage.c in Sources */,
+				A4F80F0C1615816D00050D21 /* PLCrashAsyncSignalInfo.c in Sources */,
+				A4F80F0E1615816D00050D21 /* PLCrashFrameWalker.c in Sources */,
+				A4F80F101615816D00050D21 /* PLCrashFrameWalker_arm.c in Sources */,
+				A4F80F121615816D00050D21 /* PLCrashFrameWalker_i386.c in Sources */,
+				A4F80F131615816D00050D21 /* PLCrashFrameWalker_ppc.c in Sources */,
+				A4F80F151615816D00050D21 /* PLCrashFrameWalker_x86_64.c in Sources */,
+				A4F80F181615816D00050D21 /* PLCrashLogWriter.mm in Sources */,
+				A4F80F1A1615816D00050D21 /* PLCrashReport.mm in Sources */,
+				A4F80F1C1615816D00050D21 /* PLCrashReportApplicationInfo.m in Sources */,
+				A4F80F1E1615816D00050D21 /* PLCrashReportBinaryImageInfo.m in Sources */,
+				A4F80F1F1615816D00050D21 /* PLCrashReporter.m in Sources */,
+				A4F80F211615816D00050D21 /* PLCrashReportExceptionInfo.m in Sources */,
+				A4F80F241615816D00050D21 /* PLCrashReportMachineInfo.m in Sources */,
+				A4F80F261615816D00050D21 /* PLCrashReportProcessInfo.m in Sources */,
+				A4F80F281615816D00050D21 /* PLCrashReportProcessorInfo.m in Sources */,
+				A4F80F2A1615816D00050D21 /* PLCrashReportSignalInfo.m in Sources */,
+				A4F80F2C1615816D00050D21 /* PLCrashReportSystemInfo.m in Sources */,
+				A4F80F2E1615816D00050D21 /* PLCrashReportTextFormatter.m in Sources */,
+				A4F80F301615816D00050D21 /* PLCrashReportThreadInfo.m in Sources */,
+				A4F80F321615816D00050D21 /* PLCrashSignalHandler.m in Sources */,
+				A4F80F331615816D00050D21 /* PLCrashSysctl.c in Sources */,
+				A455DB36161586E500491F21 /* descriptor.cc in Sources */,
+				A455DB38161586E500491F21 /* descriptor.pb.cc in Sources */,
+				A455DB3A161586E500491F21 /* descriptor_database.cc in Sources */,
+				A455DB3E161586E500491F21 /* dynamic_message.cc in Sources */,
+				A455DB41161586E500491F21 /* extension_set.cc in Sources */,
+				A455DB43161586E500491F21 /* extension_set_heavy.cc in Sources */,
+				A455DB45161586E500491F21 /* generated_message_reflection.cc in Sources */,
+				A455DB48161586E500491F21 /* generated_message_util.cc in Sources */,
+				A455DB4A161586E500491F21 /* coded_stream.cc in Sources */,
+				A455DB4E161586E500491F21 /* gzip_stream.cc in Sources */,
+				A455DB51161586E500491F21 /* printer.cc in Sources */,
+				A455DB54161586E500491F21 /* tokenizer.cc in Sources */,
+				A455DB57161586E500491F21 /* zero_copy_stream.cc in Sources */,
+				A455DB59161586E500491F21 /* zero_copy_stream_impl.cc in Sources */,
+				A455DB5B161586E500491F21 /* zero_copy_stream_impl_lite.cc in Sources */,
+				A455DB5F161586E500491F21 /* message.cc in Sources */,
+				A455DB61161586E500491F21 /* message_lite.cc in Sources */,
+				A455DB65161586E500491F21 /* reflection_ops.cc in Sources */,
+				A455DB68161586E500491F21 /* repeated_field.cc in Sources */,
+				A455DB6B161586E500491F21 /* service.cc in Sources */,
+				A455DB6D161586E500491F21 /* common.cc in Sources */,
+				A455DB72161586E500491F21 /* once.cc in Sources */,
+				A455DB76161586E500491F21 /* structurally_valid.cc in Sources */,
+				A455DB78161586E500491F21 /* strutil.cc in Sources */,
+				A455DB7B161586E500491F21 /* substitute.cc in Sources */,
+				A455DB87161586E500491F21 /* text_format.cc in Sources */,
+				A455DBA0161586E500491F21 /* unknown_field_set.cc in Sources */,
+				A455DBA3161586E500491F21 /* wire_format.cc in Sources */,
+				A455DBA5161586E500491F21 /* wire_format_lite.cc in Sources */,
+				8D1CA8A31636B44A00051214 /* ScreenReporterManager.m in Sources */,
+				8D1CA8A51636B44A00051214 /* ScreenReporterView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4AE74C9162400E2002C93F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABF1E5DA1504CC4A00446AE5 /* AironApp-device */;
+			targetProxy = A4AE74C8162400E2002C93F4 /* PBXContainerItemProxy */;
+		};
+		A4AE74CB162400E2002C93F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4AE73CE1624007D002C93F4 /* AironApp-sim */;
+			targetProxy = A4AE74CA162400E2002C93F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A4AE74481624007D002C93F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				DSTROOT = /tmp/AironApp.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AironApp/AironApp-Prefix.pch";
+				PRODUCT_NAME = "AironApp-sim";
+				SDKROOT = iphonesimulator;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		A4AE74491624007D002C93F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				DSTROOT = /tmp/AironApp.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AironApp/AironApp-Prefix.pch";
+				PRODUCT_NAME = "AironApp-sim";
+				SDKROOT = iphonesimulator;
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+		A4AE74C516240092002C93F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AironApp.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AironApp/AironApp-Prefix.pch";
+				PRODUCT_NAME = AironApp;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A4AE74C616240092002C93F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AironApp.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AironApp/AironApp-Prefix.pch";
+				PRODUCT_NAME = AironApp;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		ABF1E5E61504CC4A00446AE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Dependencies/protobuf-2.4.1/src\"",
+					"\"$(SRCROOT)/$(DERIVED_FILES_DIR)\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ABF1E5E71504CC4A00446AE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Dependencies/protobuf-2.4.1/src\"",
+					"\"$(SRCROOT)/$(DERIVED_FILES_DIR)\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABF1E5E91504CC4A00446AE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AironApp.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AironApp/AironApp-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ABF1E5EA1504CC4A00446AE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AironApp.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AironApp/AironApp-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4AE74471624007D002C93F4 /* Build configuration list for PBXNativeTarget "AironApp-sim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4AE74481624007D002C93F4 /* Debug */,
+				A4AE74491624007D002C93F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4AE74C416240092002C93F4 /* Build configuration list for PBXNativeTarget "AironApp-lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4AE74C516240092002C93F4 /* Debug */,
+				A4AE74C616240092002C93F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF1E5D51504CC4A00446AE5 /* Build configuration list for PBXProject "AironApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF1E5E61504CC4A00446AE5 /* Debug */,
+				ABF1E5E71504CC4A00446AE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF1E5E81504CC4A00446AE5 /* Build configuration list for PBXNativeTarget "AironApp-device" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF1E5E91504CC4A00446AE5 /* Debug */,
+				ABF1E5EA1504CC4A00446AE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABF1E5D21504CC4A00446AE5 /* Project object */;
+}

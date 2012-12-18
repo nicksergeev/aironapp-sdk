@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4184BF21619A33E0074A922 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4184BF11619A33E0074A922 /* libstdc++.dylib */; };
+		A4184BFF1619A9080074A922 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4184BFE1619A9080074A922 /* libz.dylib */; };
+		A4AE74D71624026E002C93F4 /* libAironApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4AE74D61624026E002C93F4 /* libAironApp.a */; };
+		ABF1E5FD1504CF8900446AE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF1E5FC1504CF8900446AE5 /* UIKit.framework */; };
+		ABF1E5FF1504CF8900446AE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF1E5FE1504CF8900446AE5 /* Foundation.framework */; };
+		ABF1E6011504CF8900446AE5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF1E6001504CF8900446AE5 /* CoreGraphics.framework */; };
+		ABF1E6071504CF8900446AE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABF1E6051504CF8900446AE5 /* InfoPlist.strings */; };
+		ABF1E6091504CF8900446AE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF1E6081504CF8900446AE5 /* main.m */; };
+		ABF1E60D1504CF8900446AE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF1E60C1504CF8900446AE5 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A4184BF11619A33E0074A922 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		A4184BFE1619A9080074A922 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A4AE74D51624026E002C93F4 /* AironAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AironAppManager.h; sourceTree = "<group>"; };
+		A4AE74D61624026E002C93F4 /* libAironApp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAironApp.a; sourceTree = "<group>"; };
+		ABF1E5F81504CF8900446AE5 /* AironAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AironAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF1E5FC1504CF8900446AE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ABF1E5FE1504CF8900446AE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ABF1E6001504CF8900446AE5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ABF1E6041504CF8900446AE5 /* AironAppTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AironAppTest-Info.plist"; sourceTree = "<group>"; };
+		ABF1E6061504CF8900446AE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABF1E6081504CF8900446AE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABF1E60A1504CF8900446AE5 /* AironAppTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AironAppTest-Prefix.pch"; sourceTree = "<group>"; };
+		ABF1E60B1504CF8900446AE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ABF1E60C1504CF8900446AE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABF1E5F51504CF8900446AE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4184BFF1619A9080074A922 /* libz.dylib in Frameworks */,
+				A4184BF21619A33E0074A922 /* libstdc++.dylib in Frameworks */,
+				ABF1E5FD1504CF8900446AE5 /* UIKit.framework in Frameworks */,
+				ABF1E5FF1504CF8900446AE5 /* Foundation.framework in Frameworks */,
+				ABF1E6011504CF8900446AE5 /* CoreGraphics.framework in Frameworks */,
+				A4AE74D71624026E002C93F4 /* libAironApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4AE74D31624026E002C93F4 /* AironApp */ = {
+			isa = PBXGroup;
+			children = (
+				A4AE74D41624026E002C93F4 /* include */,
+				A4AE74D61624026E002C93F4 /* libAironApp.a */,
+			);
+			path = AironApp;
+			sourceTree = SOURCE_ROOT;
+		};
+		A4AE74D41624026E002C93F4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A4AE74D51624026E002C93F4 /* AironAppManager.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		ABF1E5ED1504CF8900446AE5 = {
+			isa = PBXGroup;
+			children = (
+				A4184BFE1619A9080074A922 /* libz.dylib */,
+				A4184BF11619A33E0074A922 /* libstdc++.dylib */,
+				ABF1E6021504CF8900446AE5 /* AironAppTest */,
+				ABF1E5FB1504CF8900446AE5 /* Frameworks */,
+				ABF1E5F91504CF8900446AE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABF1E5F91504CF8900446AE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABF1E5F81504CF8900446AE5 /* AironAppTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABF1E5FB1504CF8900446AE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABF1E5FC1504CF8900446AE5 /* UIKit.framework */,
+				ABF1E5FE1504CF8900446AE5 /* Foundation.framework */,
+				ABF1E6001504CF8900446AE5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABF1E6021504CF8900446AE5 /* AironAppTest */ = {
+			isa = PBXGroup;
+			children = (
+				A4AE74D31624026E002C93F4 /* AironApp */,
+				ABF1E60B1504CF8900446AE5 /* AppDelegate.h */,
+				ABF1E60C1504CF8900446AE5 /* AppDelegate.m */,
+				ABF1E6031504CF8900446AE5 /* Supporting Files */,
+			);
+			path = AironAppTest;
+			sourceTree = "<group>";
+		};
+		ABF1E6031504CF8900446AE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABF1E6041504CF8900446AE5 /* AironAppTest-Info.plist */,
+				ABF1E6051504CF8900446AE5 /* InfoPlist.strings */,
+				ABF1E6081504CF8900446AE5 /* main.m */,
+				ABF1E60A1504CF8900446AE5 /* AironAppTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABF1E5F71504CF8900446AE5 /* AironAppTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF1E6101504CF8900446AE5 /* Build configuration list for PBXNativeTarget "AironAppTest" */;
+			buildPhases = (
+				ABF1E5F41504CF8900446AE5 /* Sources */,
+				ABF1E5F51504CF8900446AE5 /* Frameworks */,
+				ABF1E5F61504CF8900446AE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AironAppTest;
+			productName = AironAppTest;
+			productReference = ABF1E5F81504CF8900446AE5 /* AironAppTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABF1E5EF1504CF8900446AE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "fever9@gmail.com";
+			};
+			buildConfigurationList = ABF1E5F21504CF8900446AE5 /* Build configuration list for PBXProject "AironAppTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABF1E5ED1504CF8900446AE5;
+			productRefGroup = ABF1E5F91504CF8900446AE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABF1E5F71504CF8900446AE5 /* AironAppTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABF1E5F61504CF8900446AE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF1E6071504CF8900446AE5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABF1E5F41504CF8900446AE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF1E6091504CF8900446AE5 /* main.m in Sources */,
+				ABF1E60D1504CF8900446AE5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ABF1E6051504CF8900446AE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABF1E6061504CF8900446AE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABF1E60E1504CF8900446AE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+					armv7s,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "AironApp/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s armv6";
+			};
+			name = Debug;
+		};
+		ABF1E60F1504CF8900446AE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+					armv7s,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "AironApp/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s armv6";
+			};
+			name = Release;
+		};
+		ABF1E6111504CF8900446AE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Max Konev (M6E83N8DU5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Max Konev (M6E83N8DU5)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AironApp\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AironAppTest/AironAppTest-Prefix.pch";
+				INFOPLIST_FILE = "AironAppTest/AironAppTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AironApp\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4E3139F5-21EE-474A-8254-7131851732BE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4E3139F5-21EE-474A-8254-7131851732BE";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ABF1E6121504CF8900446AE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Max Konev (M6E83N8DU5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Max Konev (M6E83N8DU5)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AironApp\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AironAppTest/AironAppTest-Prefix.pch";
+				INFOPLIST_FILE = "AironAppTest/AironAppTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AironApp\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F0F3C503-5401-46F2-9BEA-4CF7AE221AFE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F0F3C503-5401-46F2-9BEA-4CF7AE221AFE";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABF1E5F21504CF8900446AE5 /* Build configuration list for PBXProject "AironAppTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF1E60E1504CF8900446AE5 /* Debug */,
+				ABF1E60F1504CF8900446AE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF1E6101504CF8900446AE5 /* Build configuration list for PBXNativeTarget "AironAppTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF1E6111504CF8900446AE5 /* Debug */,
+				ABF1E6121504CF8900446AE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABF1E5EF1504CF8900446AE5 /* Project object */;
+}
