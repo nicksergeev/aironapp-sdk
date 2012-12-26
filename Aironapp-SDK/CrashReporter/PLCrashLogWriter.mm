@@ -857,6 +857,35 @@ plcrash_error_t plcrash_log_writer_write (plcrash_log_writer_t *writer, plcrash_
     mach_msg_type_number_t thread_count;
 	
 	CrashReport crash_report;
+	
+	task_t self = mach_task_self();
+	thread_t self_thr = mach_thread_self();
+	
+	/* Get a list of all threads */
+	if (task_threads(self, &threads, &thread_count) != KERN_SUCCESS) {
+		PLCF_DEBUG("Fetching thread list failed");
+		thread_count = 0;
+	}
+	
+	bool threadsSuspended[1024] = {0};
+	/* Suspend each thread ASAP */
+	for (mach_msg_type_number_t i = 0; i < thread_count; i++) {
+		bool suspend_thread = true;
+		
+		/* Check if we're running on the to be examined thread */
+		if (MACH_PORT_INDEX(self_thr) == MACH_PORT_INDEX(threads[i])) {
+			suspend_thread = false;
+		}
+		
+		/* Suspend the thread */
+		if (suspend_thread && thread_suspend(threads[i]) != KERN_SUCCESS) {
+			PLCF_DEBUG("Could not suspend thread %d", i);
+			continue;
+		}
+		
+		if(suspend_thread)
+			threadsSuspended[i] = true;
+	}
 
     /* File header */
     {
@@ -906,43 +935,12 @@ plcrash_error_t plcrash_log_writer_write (plcrash_log_writer_t *writer, plcrash_
     
     /* Threads */
     {
-        task_t self = mach_task_self();
-        thread_t self_thr = mach_thread_self();
-
-        /* Get a list of all threads */
-        if (task_threads(self, &threads, &thread_count) != KERN_SUCCESS) {
-            PLCF_DEBUG("Fetching thread list failed");
-            thread_count = 0;
-        }
-
-        /* Suspend each thread and write out its state */
+        /* write out its state */
         for (mach_msg_type_number_t i = 0; i < thread_count; i++) {
             thread_t thread = threads[i];
-            //uint32_t size;
-            bool suspend_thread = true;
-            
-            /* Check if we're running on the to be examined thread */
-            if (MACH_PORT_INDEX(self_thr) == MACH_PORT_INDEX(threads[i])) {
-                suspend_thread = false;
-            }
-            
-            /* Suspend the thread */
-            if (suspend_thread && thread_suspend(threads[i]) != KERN_SUCCESS) {
-                PLCF_DEBUG("Could not suspend thread %d", i);
-                continue;
-            }
             
             plcrash_writer_write_thread(*crash_report.add_threads(), thread, i, crashctx);
-            
-            /* Resume the thread */
-            if (suspend_thread)
-                thread_resume(threads[i]);
         }
-        
-        /* Clean up the thread array */
-        for (mach_msg_type_number_t i = 0; i < thread_count; i++)
-            mach_port_deallocate(mach_task_self(), threads[i]);
-        vm_deallocate(mach_task_self(), (vm_address_t)threads, sizeof(thread_t) * thread_count);
     }
 
     /* Binary Images */
@@ -972,6 +970,20 @@ plcrash_error_t plcrash_log_writer_write (plcrash_log_writer_t *writer, plcrash_
 	
 	std::string str = crash_report.SerializeAsString();
 	plcrash_async_file_write(file, str.c_str(), str.length());
+	
+	/* resume threads */
+	for (mach_msg_type_number_t i = 0; i < thread_count; i++) {
+		thread_t thread = threads[i];
+		
+		/* Resume the thread */
+		if (threadsSuspended[i])
+			thread_resume(threads[i]);
+	}
+	
+	/* Clean up the thread array */
+	for (mach_msg_type_number_t i = 0; i < thread_count; i++)
+		mach_port_deallocate(mach_task_self(), threads[i]);
+	vm_deallocate(mach_task_self(), (vm_address_t)threads, sizeof(thread_t) * thread_count);
     
     return PLCRASH_ESUCCESS;
 }

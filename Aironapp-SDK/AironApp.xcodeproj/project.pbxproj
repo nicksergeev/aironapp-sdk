@@ -922,9 +922,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				A4AE744B16240092002C93F4 /* AironApp-lib */,
 				ABF1E5DA1504CC4A00446AE5 /* AironApp-device */,
 				A4AE73CE1624007D002C93F4 /* AironApp-sim */,
-				A4AE744B16240092002C93F4 /* AironApp-lib */,
 			);
 		};
 /* End PBXProject section */
