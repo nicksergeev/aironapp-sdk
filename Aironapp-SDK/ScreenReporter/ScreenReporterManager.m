@@ -47,14 +47,24 @@
 #pragma mark - Private Methods
 
 - (UIImage*)screenshot{
+#ifdef CAN_USE_UIGETSCREENIMAGE
     CGImageRef screen = UIGetScreenImage();
-    UIImage* image = [UIImage imageWithCGImage:screen];
+    UIImage * image = [UIImage imageWithCGImage:screen];
     CGImageRelease(screen);
+#else
+	UIImage * image = [ScreenReporterView screenshot:YES];
+#endif
 
     return image;
 }
 
 - (void)switchMode{
+	if([AironAppManager isAppStoreBuild])
+		return;
+	
+	//disable silent mode to show alerts
+	[[AironAppManager sharedManager] enableSilentMode:NO];
+	
 	if(![[AironAppManager sharedManager] isConfigured]) {
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Aironapp SDK is not congifured yet. Please upload this build to Aironapp." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
 		[alert show];
@@ -65,7 +75,8 @@
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     if(!view){
         view = [[ScreenReporterView alloc] initWithFrame:CGRectMake(0, 0, window.frame.size.width, window.frame.size.height)];
-        view.image = [self screenshot];
+		view.image = [ScreenReporterView screenshot:YES];
+		
         view.delegate = self;
         [window addSubview:view];
     }
@@ -83,6 +94,9 @@
 }
 
 - (void)addDectedEvent{
+	if([AironAppManager isAppStoreBuild])
+		return;
+	
     UISwipeGestureRecognizer *oneFingerSwipeRight = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(switchMode)] autorelease];
     [oneFingerSwipeRight setNumberOfTouchesRequired:3];
     [oneFingerSwipeRight setDirection:UISwipeGestureRecognizerDirectionUp | UISwipeGestureRecognizerDirectionDown];

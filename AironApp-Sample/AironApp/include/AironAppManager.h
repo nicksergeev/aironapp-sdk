@@ -14,6 +14,7 @@
 	NSString *_serviceURL;
 	NSString *_serviceVersion;
 	NSString *_appCode;
+	BOOL silentMode;
 }
 
 - (void) checkAndHandlePendingCrashReport;
@@ -21,6 +22,9 @@
 - (void) sendImage:(UIImage*)image withText:(NSString*)text;
 - (void) sendLog;
 - (BOOL) isConfigured;
+- (void) enableSilentMode:(BOOL)silent;
+
++ (BOOL) isAppStoreBuild;
 
 + (AironAppManager *) sharedManager;
 

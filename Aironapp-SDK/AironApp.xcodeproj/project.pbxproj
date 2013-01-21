@@ -11,6 +11,8 @@
 		1B9398BD163930FF00A0F16C /* ScreenReporterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA89F1636B44900051214 /* ScreenReporterManager.m */; };
 		1B9398BE1639310300A0F16C /* ScreenReporterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA8A01636B44900051214 /* ScreenReporterView.h */; };
 		1B9398BF1639310700A0F16C /* ScreenReporterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA8A11636B44900051214 /* ScreenReporterView.m */; };
+		5045001516ABC8BC00848CE8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5045001416ABC8BC00848CE8 /* OpenGLES.framework */; };
+		5045001816ABC8C400848CE8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5045001716ABC8C400848CE8 /* OpenGLES.framework */; };
 		8D1CA8A21636B44A00051214 /* ScreenReporterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA89E1636B44900051214 /* ScreenReporterManager.h */; };
 		8D1CA8A31636B44A00051214 /* ScreenReporterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA89F1636B44900051214 /* ScreenReporterManager.m */; };
 		8D1CA8A41636B44A00051214 /* ScreenReporterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA8A01636B44900051214 /* ScreenReporterView.h */; };
@@ -306,6 +308,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5045001416ABC8BC00848CE8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		5045001716ABC8C400848CE8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		8D1CA89E1636B44900051214 /* ScreenReporterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenReporterManager.h; sourceTree = "<group>"; };
 		8D1CA89F1636B44900051214 /* ScreenReporterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenReporterManager.m; sourceTree = "<group>"; };
 		8D1CA8A01636B44900051214 /* ScreenReporterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenReporterView.h; sourceTree = "<group>"; };
@@ -441,6 +445,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5045001516ABC8BC00848CE8 /* OpenGLES.framework in Frameworks */,
 				A4AE74081624007D002C93F4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +454,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5045001816ABC8C400848CE8 /* OpenGLES.framework in Frameworks */,
 				ABF1E5DF1504CC4A00446AE5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,6 +684,8 @@
 		ABF1E5DD1504CC4A00446AE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5045001716ABC8C400848CE8 /* OpenGLES.framework */,
+				5045001416ABC8BC00848CE8 /* OpenGLES.framework */,
 				ABF1E5DE1504CC4A00446AE5 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -922,9 +930,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A4AE744B16240092002C93F4 /* AironApp-lib */,
 				ABF1E5DA1504CC4A00446AE5 /* AironApp-device */,
 				A4AE73CE1624007D002C93F4 /* AironApp-sim */,
+				A4AE744B16240092002C93F4 /* AironApp-lib */,
 			);
 		};
 /* End PBXProject section */

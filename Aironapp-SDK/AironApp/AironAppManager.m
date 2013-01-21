@@ -125,6 +125,9 @@
 - (id)init {
 	self = [super init];
 	if (self) {
+		//silent mode on start
+		[self enableSilentMode:YES];
+		
 		_serviceURL = [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"aironAppServiceURL"] copy];
 		_serviceVersion = [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"aironAppServiceVersion"] copy];
 		if(!_serviceVersion)
@@ -222,7 +225,7 @@
 		
 		PLCrashReport *crashLog = [[PLCrashReport alloc] initWithData: crashData error: &error];
 		if (crashLog == nil) {
-			fprintf(stderr, "Could not decode crash log: %s\n", [[error localizedDescription] UTF8String]);
+			NSLog(@"Could not decode crash log: %@", error);
 			return;
 		}
 		
@@ -234,15 +237,47 @@
 		
 		NSString *copyLog = [self logsToUniqueFile:PREV_CONSOLE_LOG_FILENAME];
 		[self performSelectorInBackground:@selector(_sendLogs:) withObject:copyLog];
+		
+		NSData * screenshot = [crashReporter loadPendingImage];
+		if(screenshot)
+			[self performSelectorInBackground:@selector(_sendScreenshot:) withObject:screenshot];
 
 	}
 }
 
-- (void) checkForUpdate {
-	[self performSelectorInBackground:@selector(_internalCheckForUpdate) withObject:nil];
+- (void) enableSilentMode:(BOOL)silent {
+	silentMode = silent;
 }
 
+- (BOOL) isSilentMode {
+	if([AironAppManager isAppStoreBuild])
+		return YES;
+	
+	return silentMode;
+}
 
++ (BOOL) isAppStoreBuild {
+	NSString * appStoreMode = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"AironAppStoreMode"];
+	if(appStoreMode)
+		return YES;
+	
+	NSString * provisioning = [[NSBundle mainBundle] pathForResource:@"embedded.mobileprovision" ofType:nil];
+	if(!provisioning)
+		return YES;	//AppStore
+
+	BOOL scInfoPresent = [[NSFileManager defaultManager] fileExistsAtPath:@"SC_Info"];
+	if(scInfoPresent)
+		return YES;
+	
+	return NO;
+}
+
+- (void) checkForUpdate {
+	if([AironAppManager isAppStoreBuild])
+		return;
+	
+	[self performSelectorInBackground:@selector(_internalCheckForUpdate) withObject:nil];
+}
 
 - (void) _sendCrashLogWithData: (NSData *) crashData {
 	if(!crashData || !_serviceURL)
@@ -303,6 +338,9 @@
 	@autoreleasepool {
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
         NSString *text = [ScreenReporterManager sharedManager].text;
+		if(!text)
+			text = @"";
+		
 		NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/api/%@/%@", _serviceURL, _serviceVersion, @"http/uploadScreenshot"]]];
 		[request setHTTPMethod:@"POST"];
 		
@@ -336,6 +374,9 @@
 		NSLog(@"response %d",[response statusCode]);
 		if (!error && [response statusCode] == 200) { //Purge file log
             dispatch_async(dispatch_get_main_queue(), ^{
+				if([self isSilentMode])
+					return;
+				
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"successful" message:@"Upload screenshot" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
                 [alert show];
                 [alert release];
@@ -343,6 +384,9 @@
 		}else{
             NSString *msg = [NSString stringWithFormat:@"Upload screenshot %@",error];
             dispatch_async(dispatch_get_main_queue(), ^{
+				if([self isSilentMode])
+					return;
+
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:msg delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
                 [alert show];
                 [alert release];
@@ -421,6 +465,9 @@
 		if (!error && [response statusCode] == 200) { //Purge file log
 			NSLog(@"Logs sent.");
 			dispatch_async(dispatch_get_main_queue(), ^{
+				if([self isSilentMode])
+					return;
+
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"successful" message:@"Upload Logs" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
                 [alert show];
                 [alert release];
@@ -429,6 +476,9 @@
 			NSLog(@"AirOnApp failed to send data to server. Status code %d, error=%@", statusCode, error);
 			NSString *message = [NSString stringWithFormat:@"AirOnApp failed to send data to server. Status code %d, error=%@", statusCode, error];
 			dispatch_async(dispatch_get_main_queue(), ^{
+				if([self isSilentMode])
+					return;
+
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error Log" message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
                 [alert show];
                 [alert release];
@@ -442,6 +492,9 @@
 
 - (void) _internalCheckForUpdate {
 	if(!_serviceURL)
+		return;
+	
+	if([AironAppManager isAppStoreBuild])
 		return;
 	
 	@autoreleasepool {

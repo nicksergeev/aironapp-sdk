@@ -3,7 +3,7 @@
 //  AironApp
 //
 //  Created by Konstantin Kabanov on 3/5/12.
-//  Copyright (c) 2012 fever9@gmail.com. All rights reserved.
+//  Copyright (c) 2012 Arello Mobile.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,12 +14,17 @@
 	NSString *_serviceURL;
 	NSString *_serviceVersion;
 	NSString *_appCode;
+	BOOL silentMode;
 }
 
 - (void) checkAndHandlePendingCrashReport;
 - (void) checkForUpdate;
 - (void) sendImage:(UIImage*)image withText:(NSString*)text;
 - (void) sendLog;
+- (BOOL) isConfigured;
+- (void) enableSilentMode:(BOOL)silent;
+
++ (BOOL) isAppStoreBuild;
 
 + (AironAppManager *) sharedManager;
 

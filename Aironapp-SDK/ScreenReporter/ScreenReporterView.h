@@ -32,5 +32,6 @@
 @property (nonatomic, retain) UITextView *textField;
 @property (nonatomic, assign) NSObject <ScreenReporterDelegate> *delegate;
 
++ (UIImage *) screenshot:(BOOL) captureOpenGL;
 
 @end

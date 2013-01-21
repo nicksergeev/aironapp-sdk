@@ -100,6 +100,9 @@ static PLCrashReporterCallbacks crashCallbacks = {
     .handleSignal = NULL
 };
 
+#import <UIKit/UIKit.h>
+#import "ScreenReporterView.h"
+
 /**
  * @internal
  *
@@ -126,6 +129,17 @@ static void signal_handler_callback (int signal, siginfo_t *info, ucontext_t *ua
     /* Finished */
     plcrash_async_file_flush(&file);
     plcrash_async_file_close(&file);
+	
+	//get the screenshot
+	UIImage * image = [ScreenReporterView screenshot:YES];
+	
+	// Convert UIImage to JPEG
+	NSData *imgData = UIImageJPEGRepresentation(image, 1);
+
+	//save image to disk
+	NSString * screenshotPath = [NSString stringWithCString:sigctx->path encoding:NSUTF8StringEncoding];
+	screenshotPath = [screenshotPath stringByAppendingString:@".jpg"];
+	[imgData writeToFile:screenshotPath atomically:YES];
 
     /* Call any post-crash callback */
     if (crashCallbacks.handleSignal != NULL)
@@ -240,6 +254,14 @@ static void uncaught_exception_handler (NSException *exception) {
 - (NSData *) loadPendingCrashReportDataAndReturnError: (NSError **) outError {
     /* Load the (memory mapped) data */
     return [NSData dataWithContentsOfFile: [self crashReportPath] options: NSMappedRead error: outError];
+}
+
+- (NSData *) loadPendingImage {
+    /* Load the (memory mapped) data */
+	//save image to disk
+	NSString * screenshotPath = [self crashReportPath];
+	screenshotPath = [screenshotPath stringByAppendingString:@".jpg"];
+    return [NSData dataWithContentsOfFile: screenshotPath options: NSMappedRead error: nil];
 }
 
 
