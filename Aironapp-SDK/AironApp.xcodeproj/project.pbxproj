@@ -11,8 +11,6 @@
 		1B9398BD163930FF00A0F16C /* ScreenReporterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA89F1636B44900051214 /* ScreenReporterManager.m */; };
 		1B9398BE1639310300A0F16C /* ScreenReporterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA8A01636B44900051214 /* ScreenReporterView.h */; };
 		1B9398BF1639310700A0F16C /* ScreenReporterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA8A11636B44900051214 /* ScreenReporterView.m */; };
-		5045001516ABC8BC00848CE8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5045001416ABC8BC00848CE8 /* OpenGLES.framework */; };
-		5045001816ABC8C400848CE8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5045001716ABC8C400848CE8 /* OpenGLES.framework */; };
 		8D1CA8A21636B44A00051214 /* ScreenReporterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA89E1636B44900051214 /* ScreenReporterManager.h */; };
 		8D1CA8A31636B44A00051214 /* ScreenReporterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA89F1636B44900051214 /* ScreenReporterManager.m */; };
 		8D1CA8A41636B44A00051214 /* ScreenReporterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA8A01636B44900051214 /* ScreenReporterView.h */; };
@@ -433,7 +431,7 @@
 		A4F80EC71615816D00050D21 /* PLCrashSignalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCrashSignalHandler.m; sourceTree = "<group>"; };
 		A4F80EC81615816D00050D21 /* PLCrashSysctl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashSysctl.c; sourceTree = "<group>"; };
 		A4F80EC91615816D00050D21 /* PLCrashSysctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashSysctl.h; sourceTree = "<group>"; };
-		ABF1E5DB1504CC4A00446AE5 /* libAironApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAironApp.a; path = "libAironApp-device.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF1E5DB1504CC4A00446AE5 /* libAironApp-device.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAironApp-device.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF1E5DE1504CC4A00446AE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ABF1E5E21504CC4A00446AE5 /* AironApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AironApp-Prefix.pch"; sourceTree = "<group>"; };
 		ABF1E5E31504CC4A00446AE5 /* AironAppManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AironAppManager.h; sourceTree = "<group>"; };
@@ -445,7 +443,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5045001516ABC8BC00848CE8 /* OpenGLES.framework in Frameworks */,
 				A4AE74081624007D002C93F4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,7 +451,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5045001816ABC8C400848CE8 /* OpenGLES.framework in Frameworks */,
 				ABF1E5DF1504CC4A00446AE5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -674,7 +670,7 @@
 		ABF1E5DC1504CC4A00446AE5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABF1E5DB1504CC4A00446AE5 /* libAironApp.a */,
+				ABF1E5DB1504CC4A00446AE5 /* libAironApp-device.a */,
 				A4AE744A1624007D002C93F4 /* libAironApp-sim.a */,
 				A4AE74C716240092002C93F4 /* libAironApp.a */,
 			);
@@ -906,7 +902,7 @@
 			);
 			name = "AironApp-device";
 			productName = AironApp;
-			productReference = ABF1E5DB1504CC4A00446AE5 /* libAironApp.a */;
+			productReference = ABF1E5DB1504CC4A00446AE5 /* libAironApp-device.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */

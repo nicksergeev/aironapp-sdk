@@ -133,8 +133,9 @@
 }
 
 
-
 #import <OpenGLES/ES1/glext.h>
+#include <dlfcn.h>
+
 // IMPORTANT: Call this method after you draw and before -presentRenderbuffer:.
 // Or set
 //CAEAGLLayer *eaglLayer = (CAEAGLLayer *) self.layer;
@@ -146,6 +147,19 @@
 + (UIImage *) openGlScreenshot:(UIView *) eaglview
 {
     GLint backingWidth, backingHeight;
+	
+	typedef void (*FP)(GLenum, GLenum, GLint *);
+	FP glGetRenderbufferParameterivOES = 0;
+	glGetRenderbufferParameterivOES = dlsym(RTLD_SELF, "glGetRenderbufferParameterivOES");
+
+	
+	typedef void (*glPSi)(GLenum pname, GLint param);
+	glPSi glPixelStorei = 0;
+	glPixelStorei = dlsym(RTLD_SELF, "glPixelStorei");
+	
+	typedef void (*glRP)(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLvoid* pixels);
+	glRP glReadPixels = 0;
+	glReadPixels = dlsym(RTLD_SELF, "glReadPixels");
 	
     // Bind the color renderbuffer used to render the OpenGL ES view
     // If your application only creates a single color renderbuffer which is already bound at this point,
