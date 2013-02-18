@@ -92,7 +92,8 @@ enum Architecture {
   PPC = 3,
   PPC64 = 4,
   ARMV7 = 5,
-  ARCHITECTURE_UNKNOWN = 6
+  ARMV7s = 6,
+  ARCHITECTURE_UNKNOWN = 7
 };
 bool Architecture_IsValid(int value);
 const Architecture Architecture_MIN = X86_32;
@@ -1763,7 +1764,7 @@ inline void CrashReport_SystemInfo::clear_has_architecture() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void CrashReport_SystemInfo::clear_architecture() {
-  architecture_ = 6;
+  architecture_ = 7;
   clear_has_architecture();
 }
 inline plcrash::Architecture CrashReport_SystemInfo::architecture() const {

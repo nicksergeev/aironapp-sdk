@@ -11,11 +11,14 @@
 		1B9398BD163930FF00A0F16C /* ScreenReporterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA89F1636B44900051214 /* ScreenReporterManager.m */; };
 		1B9398BE1639310300A0F16C /* ScreenReporterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA8A01636B44900051214 /* ScreenReporterView.h */; };
 		1B9398BF1639310700A0F16C /* ScreenReporterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA8A11636B44900051214 /* ScreenReporterView.m */; };
+		50D4053516D21673001B3F08 /* crash_report.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 50D4053316D21673001B3F08 /* crash_report.pb.cc */; };
+		50D4053616D21673001B3F08 /* crash_report.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 50D4053316D21673001B3F08 /* crash_report.pb.cc */; };
+		50D4053716D21673001B3F08 /* crash_report.pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 50D4053416D21673001B3F08 /* crash_report.pb.h */; };
+		50D4053816D21673001B3F08 /* crash_report.pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 50D4053416D21673001B3F08 /* crash_report.pb.h */; };
 		8D1CA8A21636B44A00051214 /* ScreenReporterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA89E1636B44900051214 /* ScreenReporterManager.h */; };
 		8D1CA8A31636B44A00051214 /* ScreenReporterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA89F1636B44900051214 /* ScreenReporterManager.m */; };
 		8D1CA8A41636B44A00051214 /* ScreenReporterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1CA8A01636B44900051214 /* ScreenReporterView.h */; };
 		8D1CA8A51636B44A00051214 /* ScreenReporterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CA8A11636B44900051214 /* ScreenReporterView.m */; };
-		A4184BFD1619A8E50074A922 /* crash_report.proto in Sources */ = {isa = PBXBuildFile; fileRef = A4F80E821615816D00050D21 /* crash_report.proto */; };
 		A455DAE4161586E500491F21 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA01161586E400491F21 /* config.h */; };
 		A455DB36161586E500491F21 /* descriptor.cc in Sources */ = {isa = PBXBuildFile; fileRef = A455DA5B161586E400491F21 /* descriptor.cc */; };
 		A455DB37161586E500491F21 /* descriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DA5C161586E400491F21 /* descriptor.h */; };
@@ -83,7 +86,6 @@
 		A455DBB71615A5FF00491F21 /* PLCrashAsync.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DBB61615A5FF00491F21 /* PLCrashAsync.h */; };
 		A455DBB91615A62A00491F21 /* PLCrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DBB81615A62A00491F21 /* PLCrashReporter.h */; };
 		A455DBBB1615A65F00491F21 /* PLCrashFrameWalker_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = A455DBBA1615A65F00491F21 /* PLCrashFrameWalker_i386.h */; };
-		A4AE73D01624007D002C93F4 /* crash_report.proto in Sources */ = {isa = PBXBuildFile; fileRef = A4F80E821615816D00050D21 /* crash_report.proto */; };
 		A4AE73D11624007D002C93F4 /* AironAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF1E5E41504CC4A00446AE5 /* AironAppManager.m */; };
 		A4AE73D21624007D002C93F4 /* CrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F80E841615816D00050D21 /* CrashReporter.m */; };
 		A4AE73D31624007D002C93F4 /* PLCrashAsync.c in Sources */ = {isa = PBXBuildFile; fileRef = A4F80E9E1615816D00050D21 /* PLCrashAsync.c */; };
@@ -308,11 +310,12 @@
 /* Begin PBXFileReference section */
 		5045001416ABC8BC00848CE8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
 		5045001716ABC8C400848CE8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		50D4053316D21673001B3F08 /* crash_report.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crash_report.pb.cc; sourceTree = "<group>"; };
+		50D4053416D21673001B3F08 /* crash_report.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crash_report.pb.h; sourceTree = "<group>"; };
 		8D1CA89E1636B44900051214 /* ScreenReporterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenReporterManager.h; sourceTree = "<group>"; };
 		8D1CA89F1636B44900051214 /* ScreenReporterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenReporterManager.m; sourceTree = "<group>"; };
 		8D1CA8A01636B44900051214 /* ScreenReporterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenReporterView.h; sourceTree = "<group>"; };
 		8D1CA8A11636B44900051214 /* ScreenReporterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenReporterView.m; sourceTree = "<group>"; };
-		A455D9FE161586E400491F21 /* protoc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = protoc; sourceTree = "<group>"; };
 		A455DA01161586E400491F21 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		A455DA5B161586E400491F21 /* descriptor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = descriptor.cc; sourceTree = "<group>"; };
 		A455DA5C161586E400491F21 /* descriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descriptor.h; sourceTree = "<group>"; };
@@ -384,7 +387,6 @@
 		A455DBBA1615A65F00491F21 /* PLCrashFrameWalker_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCrashFrameWalker_i386.h; sourceTree = "<group>"; };
 		A4AE744A1624007D002C93F4 /* libAironApp-sim.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAironApp-sim.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AE74C716240092002C93F4 /* libAironApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAironApp.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4F80E821615816D00050D21 /* crash_report.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crash_report.proto; sourceTree = "<group>"; };
 		A4F80E831615816D00050D21 /* CrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporter.h; sourceTree = "<group>"; };
 		A4F80E841615816D00050D21 /* CrashReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashReporter.m; sourceTree = "<group>"; };
 		A4F80E9E1615816D00050D21 /* PLCrashAsync.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PLCrashAsync.c; sourceTree = "<group>"; };
@@ -481,18 +483,9 @@
 		A455D9FC161586E400491F21 /* protobuf-2.4.1 */ = {
 			isa = PBXGroup;
 			children = (
-				A455D9FD161586E400491F21 /* bin */,
 				A455D9FF161586E400491F21 /* src */,
 			);
 			path = "protobuf-2.4.1";
-			sourceTree = "<group>";
-		};
-		A455D9FD161586E400491F21 /* bin */ = {
-			isa = PBXGroup;
-			children = (
-				A455D9FE161586E400491F21 /* protoc */,
-			);
-			path = bin;
 			sourceTree = "<group>";
 		};
 		A455D9FF161586E400491F21 /* src */ = {
@@ -603,8 +596,9 @@
 		A4F80E7C1615816D00050D21 /* CrashReporter */ = {
 			isa = PBXGroup;
 			children = (
+				50D4053316D21673001B3F08 /* crash_report.pb.cc */,
+				50D4053416D21673001B3F08 /* crash_report.pb.h */,
 				A455D9FB161586E400491F21 /* Dependencies */,
-				A4F80E821615816D00050D21 /* crash_report.proto */,
 				A4F80E831615816D00050D21 /* CrashReporter.h */,
 				A4F80E841615816D00050D21 /* CrashReporter.m */,
 				A455DBB61615A5FF00491F21 /* PLCrashAsync.h */,
@@ -776,6 +770,7 @@
 				A4AE74451624007D002C93F4 /* PLCrashFrameWalker_i386.h in Headers */,
 				1B9398BB163930FC00A0F16C /* ScreenReporterManager.h in Headers */,
 				1B9398BE1639310300A0F16C /* ScreenReporterView.h in Headers */,
+				50D4053816D21673001B3F08 /* crash_report.pb.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,6 +840,7 @@
 				A455DBBB1615A65F00491F21 /* PLCrashFrameWalker_i386.h in Headers */,
 				8D1CA8A21636B44A00051214 /* ScreenReporterManager.h in Headers */,
 				8D1CA8A41636B44A00051214 /* ScreenReporterView.h in Headers */,
+				50D4053716D21673001B3F08 /* crash_report.pb.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -954,7 +950,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4AE73D01624007D002C93F4 /* crash_report.proto in Sources */,
 				A4AE73D11624007D002C93F4 /* AironAppManager.m in Sources */,
 				A4AE73D21624007D002C93F4 /* CrashReporter.m in Sources */,
 				A4AE73D31624007D002C93F4 /* PLCrashAsync.c in Sources */,
@@ -1011,6 +1006,7 @@
 				A4AE74061624007D002C93F4 /* wire_format_lite.cc in Sources */,
 				1B9398BD163930FF00A0F16C /* ScreenReporterManager.m in Sources */,
 				1B9398BF1639310700A0F16C /* ScreenReporterView.m in Sources */,
+				50D4053616D21673001B3F08 /* crash_report.pb.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1018,7 +1014,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4184BFD1619A8E50074A922 /* crash_report.proto in Sources */,
 				ABF1E5E51504CC4A00446AE5 /* AironAppManager.m in Sources */,
 				A4F80EEF1615816D00050D21 /* CrashReporter.m in Sources */,
 				A4F80F091615816D00050D21 /* PLCrashAsync.c in Sources */,
@@ -1075,6 +1070,7 @@
 				A455DBA5161586E500491F21 /* wire_format_lite.cc in Sources */,
 				8D1CA8A31636B44A00051214 /* ScreenReporterManager.m in Sources */,
 				8D1CA8A51636B44A00051214 /* ScreenReporterView.m in Sources */,
+				50D4053516D21673001B3F08 /* crash_report.pb.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
