@@ -156,13 +156,13 @@
 	NSError *error = nil;
 	BOOL success = NO;
 	success = [[NSFileManager defaultManager] removeItemAtPath:prevLogPath error:&error];
-	if(error)
-		NSLog(@"Failed to remove prev_prev log: %@", error);
+//	if(error)
+//		NSLog(@"Failed to remove prev_prev log: %@", error);
 	
 	error = nil;
 	success = [[NSFileManager defaultManager] moveItemAtPath:logPath toPath:prevLogPath error:&error];
-	if(error)
-		NSLog(@"Failed to move prev to prev_prev log: %@", error);
+//	if(error)
+//		NSLog(@"Failed to move prev to prev_prev log: %@", error);
 	error = nil;
 
 	[self performSelectorInBackground:@selector(redirectConsoleLogToDocumentFolderWithLogPath:) withObject:logPath];

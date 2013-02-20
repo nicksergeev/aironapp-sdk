@@ -308,7 +308,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5045001416ABC8BC00848CE8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
 		5045001716ABC8C400848CE8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		50D4053316D21673001B3F08 /* crash_report.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crash_report.pb.cc; sourceTree = "<group>"; };
 		50D4053416D21673001B3F08 /* crash_report.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crash_report.pb.h; sourceTree = "<group>"; };
@@ -675,7 +674,6 @@
 			isa = PBXGroup;
 			children = (
 				5045001716ABC8C400848CE8 /* OpenGLES.framework */,
-				5045001416ABC8BC00848CE8 /* OpenGLES.framework */,
 				ABF1E5DE1504CC4A00446AE5 /* Foundation.framework */,
 			);
 			name = Frameworks;

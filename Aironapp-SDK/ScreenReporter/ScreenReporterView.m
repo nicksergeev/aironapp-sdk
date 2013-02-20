@@ -18,8 +18,8 @@
 @implementation UIView (findEAGLView)
 - (UIView *)findEAGLView
 {
-    NSLog(@"%@", self);
-	if([[[self class] layerClass] isSubclassOfClass:[CAEAGLLayer class]])
+ 	const char * className = object_getClassName([[self class] layerClass]);
+	if(!strcmp(className, "CAEAGLLayer"))
 	{
 		return self;
 	}
